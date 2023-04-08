@@ -34,11 +34,11 @@ export default [
         path: '/services/traumatology',
         imgUrl: 'traumatology'
     },
-    {
+    /*{
         id: 6,
         label: 'Услуга 6',
         text: '',
         path: '/services/six',
         imgUrl: 'default'
-    },
+    },*/
 ]

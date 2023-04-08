@@ -15,7 +15,6 @@ import {BaseBtnBack} from "@/components/base/BaseBtnBack";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
 import {CheckIcon} from "@chakra-ui/icons";
-import {BaseBtnCall} from "@/components/base/BaseBtnCall";
 import {phoneNumber} from "@/config/defaultOptions";
 import {Banner} from "@/components/Banner";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
