@@ -12,10 +12,8 @@ export const HeaderBanner = () => {
             px="4"
             py="2"
         >
-            {/*<Text fontSize={{base: "10px", md: "12px", lg: "14px", xl: "16px"}} display={{base: "none", md: "block"}}>МСК  - ваш гид в вопросах здоровья</Text>*/}
             <Text fontSize={{base: "10px", md: "12px", lg: "14px", xl: "16px"}}>Горячая линия  экстренной госпитализации</Text>
             <Text fontSize={{base: "10px", md: "12px", lg: "14px", xl: "16px"}} color="#82b1ff">{phoneNumber}</Text>
-            {/*<Text fontSize={{base: "10px", md: "12px", lg: "14px", xl: "16px"}} display={{base: "none", md: "block"}}>24/7/365 без выходных и праздников</Text>*/}
         </Box>
     )
 }

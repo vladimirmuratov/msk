@@ -18,7 +18,7 @@ export const Banner = ({imgUrl, label}) => {
                 left="50%"
                 color="white"
                 // whiteSpace="nowrap"
-                size={{base: "sm", md: "xl"}}
+                size={{base: "md", md: "xl"}}
                 style={{transform: "translate(-50%, -50%)"}}
             >
                 {label}
