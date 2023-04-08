@@ -1,6 +1,9 @@
 import {Box} from "@chakra-ui/react";
 
 export const Container = ({children}) => {
+    // Желтый фон
+    // linear(to-r, #fff8e1, #ffecb3)
+
     return (
         <Box
             display="flex"
@@ -9,7 +12,7 @@ export const Container = ({children}) => {
             maxW="1440px"
             minH="100vh"
             padding="0"
-            bgGradient='linear(to-r, #fff8e1, #ffecb3)'
+            bgGradient="linear(to-r, #bbdefb, #90caf9)"
         >
             {children}
         </Box>

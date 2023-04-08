@@ -13,7 +13,7 @@ export const HeaderLinksBlock = ({links}) => {
         <Box
             display={{base: 'none', md: 'flex'}}
             gap="1rem"
-            fontSize={{md: '1rem', lg: '1.2rem'}}
+            fontSize={{md: '0.8rem', lg: '1.2rem'}}
             fontWeight="semibold"
             letterSpacing={1.2}
         >

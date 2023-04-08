@@ -1,12 +1,12 @@
 import {Card, CardBody, CardHeader, CardFooter, Heading, Text} from '@chakra-ui/react';
 import {ArrowRightIcon} from '@chakra-ui/icons';
 
-export const BaseCard = ({id, label, text, path, navigate}) => {
+export const BaseCard = ({id, label, text, path, imgUrl, navigate}) => {
     const styles = {
         transition: "all 0.3s",
         cursor: "pointer",
         textShadow: " 1px 1px 2px white",
-        backgroundImage: `url(./images/pic${id}.jpg)`,
+        backgroundImage: `url(./images/${imgUrl}.png)`,
         backgroundSize: "cover"
     }
     const hoverStyles = {

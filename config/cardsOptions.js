@@ -1,38 +1,44 @@
 export default [
     {
         id: 1,
-        label: 'Услуга 1',
-        text: 'Описание...',
-        path: '/blocks/one'
+        label: 'Кардиология',
+        text: '',
+        path: '/services/cardiology',
+        imgUrl: 'cardiology'
     },
     {
         id: 2,
-        label: 'Услуга 2',
-        text: 'Описание...',
-        path: '/blocks/two'
+        label: 'Неврология',
+        text: '',
+        path: '/services/neurology',
+        imgUrl: 'neurology'
     },
     {
         id: 3,
-        label: 'Услуга 3',
-        text: 'Описание...',
-        path: '/blocks/three'
+        label: 'Нейрохирургия',
+        text: '',
+        path: '/services/neurosurgery',
+        imgUrl: 'neurosurgery'
     },
     {
         id: 4,
-        label: 'Услуга 4',
-        text: 'Описание...',
-        path: '/blocks/four'
+        label: 'Терапия',
+        text: '',
+        path: '/services/therapy',
+        imgUrl: 'therapy'
     },
     {
         id: 5,
-        label: 'Услуга 5',
-        text: 'Описание...',
-        path: '/blocks/five'
+        label: 'Травматология и ортопедия',
+        text: '',
+        path: '/services/traumatology',
+        imgUrl: 'traumatology'
     },
     {
         id: 6,
         label: 'Услуга 6',
-        text: 'Описание...',
-        path: '/blocks/six'
+        text: '',
+        path: '/services/six',
+        imgUrl: 'default'
     },
 ]
