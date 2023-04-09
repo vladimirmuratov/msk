@@ -1,4 +1,4 @@
-import {Box, Heading, Image, List, ListItem, Text} from "@chakra-ui/react";
+import {Box, Heading, Image, List, ListItem, Text, useDisclosure} from "@chakra-ui/react";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
 import {Banner} from "@/components/Banner";
@@ -7,8 +7,10 @@ import {CheckIcon} from "@chakra-ui/icons";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
 import {BaseAccordion} from "@/components/base/BaseAccordion";
 import {CollaborationsBlock} from "@/components/CollaborationsBlock";
+import {BaseModal} from "@/components/base/BaseModal";
 
 export default function Index() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
         <>
@@ -18,6 +20,7 @@ export default function Index() {
                 <meta name="keywords" content="медицинские услуги, скорая помощь, госпитализация"/>
                 <meta name="description" content="компания по оказанию экстренных медицинских услуг"/>
             </Head>
+            <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box py="5px" px="4">
                     <Banner imgUrl="./images/hospitalization-main.png" label="Госпитализация в стационар"/>
@@ -50,7 +53,7 @@ export default function Index() {
                             </ListItem>
                         </List>
                     </Box>
-                    <BaseCallBlock/>
+                    <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
                     <List spacing="4">
                         <Heading size="lg">БЕСПЛАТНО</Heading>
                         <Heading size="lg">БЫСТРО</Heading>

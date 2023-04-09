@@ -1,8 +1,9 @@
 import {Box} from "@chakra-ui/react";
 
-export const BaseBtnCall = () => {
+export const BaseBtnCall = ({onClick, btnLabel}) => {
     return (
         <Box
+            onClick={onClick}
             backgroundColor="red.500"
             color="white"
             py="4"
@@ -10,10 +11,12 @@ export const BaseBtnCall = () => {
             fontSize="2xl"
             textAlign="center"
             cursor="pointer"
+            boxShadow="xl"
             _hover={{boxShadow: "2xl"}}
+            _pressed={{boxShadow: "xl"}}
             transition="0.3s"
         >
-            Заказать консультацию
+            {btnLabel}
         </Box>
     )
 }

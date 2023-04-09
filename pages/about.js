@@ -1,15 +1,17 @@
-import {Box, Heading, Image, List, ListItem, Text} from "@chakra-ui/react";
+import {Box, Heading, List, ListItem, Text, useDisclosure} from "@chakra-ui/react";
 import {BaseBtnBack} from "@/components/base/BaseBtnBack";
 import {BaseTitlePage} from "@/components/base/BaseTitlePage";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
-import { CheckIcon } from "@chakra-ui/icons";
-import {BaseBtnCall} from "@/components/base/BaseBtnCall";
+import {CheckIcon} from "@chakra-ui/icons";
 import {phoneNumber} from "@/config/defaultOptions";
 import {Banner} from "@/components/Banner";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
+import {BaseModal} from "@/components/base/BaseModal";
 
 export default function About() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
     return (
         <>
             <Head>
@@ -18,6 +20,7 @@ export default function About() {
                 <meta name="keywords" content="медицинские услуги, скорая помощь, госпитализация"/>
                 <meta name="description" content="компания по оказанию экстренных медицинских услуг"/>
             </Head>
+            <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px="1rem">
                     <BaseBtnBack/>
@@ -72,7 +75,7 @@ export default function About() {
                                 и безопасность для пациентов.</Heading>
                         </Box>
                     </Box>
-                    <BaseCallBlock/>
+                    <BaseCallBlock onClick={onOpen}/>
                     <Box py="10" display="flex" justifyContent="space-around">
                         <Heading size="md">Logo MSK</Heading>
                         <Heading size="md">{phoneNumber}</Heading>

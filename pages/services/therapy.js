@@ -1,4 +1,4 @@
-import {Box, Heading, List, ListItem, Text, UnorderedList} from "@chakra-ui/react";
+import {Box, Heading, List, ListItem, Text, UnorderedList, useDisclosure} from "@chakra-ui/react";
 import {BaseBtnBack} from "@/components/base/BaseBtnBack";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
@@ -6,8 +6,11 @@ import {CheckIcon} from "@chakra-ui/icons";
 import {Banner} from "@/components/Banner";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
 import {BaseOurValues} from "@/components/base/BaseOurValues";
+import {BaseModal} from "@/components/base/BaseModal";
 
 export default function Therapy() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
     return (
         <>
             <Head>
@@ -16,6 +19,7 @@ export default function Therapy() {
                 <meta name="keywords" content="медицинские услуги, скорая помощь, госпитализация"/>
                 <meta name="description" content="компания по оказанию экстренных медицинских услуг"/>
             </Head>
+            <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px="1rem" flexGrow="1">
                     <BaseBtnBack/>
@@ -26,7 +30,7 @@ export default function Therapy() {
                             Высококвалифицированные врачи общей практики
                         </Heading>
                     </Box>
-                    <BaseCallBlock/>
+                    <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
                     <Box>
                         <Heading fontSize="22px" mb="5">
                             Мы оказываем содействие в организации медицинской помощи пациентам с внутренними болезнями,

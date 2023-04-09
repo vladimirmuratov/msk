@@ -1,12 +1,15 @@
-import {Box, Heading, List, ListItem, Text, UnorderedList} from "@chakra-ui/react";
+import {Box, Heading, List, ListItem, Text, UnorderedList, useDisclosure} from "@chakra-ui/react";
 import {BaseBtnBack} from "@/components/base/BaseBtnBack";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
 import {Banner} from "@/components/Banner";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
 import {BaseOurValues} from "@/components/base/BaseOurValues";
+import {BaseModal} from "@/components/base/BaseModal";
 
 export default function Traumatology() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
     return (
         <>
             <Head>
@@ -15,6 +18,7 @@ export default function Traumatology() {
                 <meta name="keywords" content="медицинские услуги, скорая помощь, госпитализация"/>
                 <meta name="description" content="компания по оказанию экстренных медицинских услуг"/>
             </Head>
+            <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px="1rem" flexGrow="1">
                     <BaseBtnBack/>
@@ -29,7 +33,7 @@ export default function Traumatology() {
                             Наши специалисты всегда помогут Вам найти врача и подобрать для вас оптимальне решение.
                         </Heading>
                     </Box>
-                    <BaseCallBlock/>
+                    <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
                     <Box display="flex" flexDirection="column" gap="5">
                         <Heading fontSize="20px">Мы оказываем содействие в организации специализированной травматолого-
                             ортопедической помощи.</Heading>
