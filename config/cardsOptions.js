@@ -34,11 +34,11 @@ export default [
         path: '/services/traumatology',
         imgUrl: 'traumatology'
     },
-    /*{
+    {
         id: 6,
-        label: 'Услуга 6',
+        label: 'Реабилитация после инсульта',
         text: '',
-        path: '/services/six',
-        imgUrl: 'default'
-    },*/
+        path: '/services/rehabilitation',
+        imgUrl: 'rehabilitation'
+    },
 ]

@@ -4,6 +4,7 @@ import {RiCopyrightLine} from "react-icons/ri";
 export const Footer = () => {
     return (
         <Box
+            as="footer"
             position="sticky"
             bottom="0"
             backgroundColor="#e0f2f1"
@@ -14,10 +15,12 @@ export const Footer = () => {
             bgGradient="linear(to-r, blue.600, blue.300)"
             color="white"
         >
-            {/*<Text>Copyright</Text>
-            <RiCopyrightLine size="14px"/>
-            <Text ml="5px">{new Date().getFullYear()}</Text>*/}
-            <Text fontSize="10px">
+            <Box fontSize="14px" display={{base: "flex", md: "none"}} alignItems={{base: "center"}}>
+                <Text>Copyright</Text>
+                <RiCopyrightLine size="14px"/>
+                <Text ml="5px">{new Date().getFullYear()}</Text>
+            </Box>
+            <Text display={{base: "none", md: "block"}} fontSize="10px">
                 Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается
                 копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или
                 любое иное использование информации и объектов без предварительного письменного согласия
