@@ -12,7 +12,7 @@ export default function Service() {
     return (
         <>
             <Head>
-                <title>МСК | Госпитализация</title>
+                <title>МСК | Сервис</title>
                 <meta charSet="utf-8"/>
                 <meta name="keywords" content="медицинские услуги, скорая помощь, госпитализация"/>
                 <meta name="description" content="компания по оказанию экстренных медицинских услуг"/>

@@ -1,8 +1,9 @@
-import Router from "next/router";
+import { useRouter } from "next/router";
 import {Button} from "@chakra-ui/react";
 import {ArrowBackIcon} from "@chakra-ui/icons";
 
 export const BaseBtnBack = () => {
+    const router = useRouter()
 
     const styles = {
         padding: 0,
@@ -17,7 +18,8 @@ export const BaseBtnBack = () => {
             style={styles}
             _hover={hoverStyles}
             leftIcon={<ArrowBackIcon/>}
-            onClick={() => Router.push('/')}
+            onClick={() => router.back()}
+            // onClick={() => window.history.back()}
             variant="ghost"
             position="absolute"
         >

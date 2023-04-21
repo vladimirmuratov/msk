@@ -21,7 +21,7 @@ export default function Therapy() {
             </Head>
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
-                <Box px="1rem" flexGrow="1">
+                <Box px={{base: "1", md: "1rem"}} flexGrow="1">
                     <BaseBtnBack/>
                     <Heading my="10" size={{base: "lg"}}>Терапия</Heading>
                     <Banner imgUrl="../images/therapy.png" label="Терапия"/>

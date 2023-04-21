@@ -5,6 +5,7 @@ export const Banner = ({imgUrl, label}) => {
         <Box
             mt="10"
             position="relative"
+            textAlign="center"
         >
             <Image
                 src={imgUrl}
@@ -12,9 +13,9 @@ export const Banner = ({imgUrl, label}) => {
                 width="full"
             />
             <Heading
-                textShadow='1px 1px #ff0000'
+                textShadow='1px 1px #000'
                 position="absolute"
-                top="50%"
+                top="45%"
                 left="50%"
                 color="white"
                 // whiteSpace="nowrap"

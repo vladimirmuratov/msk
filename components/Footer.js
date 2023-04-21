@@ -16,9 +16,9 @@ export const Footer = () => {
             color="white"
         >
             <Box fontSize="14px" display={{base: "flex", md: "none"}} alignItems={{base: "center"}}>
-                <Text>Copyright</Text>
+                <Text mb="0">Copyright</Text>
                 <RiCopyrightLine size="14px"/>
-                <Text ml="5px">{new Date().getFullYear()}</Text>
+                <Text mb="0" ml="5px">{new Date().getFullYear()}</Text>
             </Box>
             <Text display={{base: "none", md: "block"}} fontSize="10px">
                 Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается

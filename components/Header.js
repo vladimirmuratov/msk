@@ -11,9 +11,10 @@ export const Header = ({onOpen}) => {
         <>
             <HeaderBanner/>
             <Box
+                as="header"
                 position="sticky"
                 top="0"
-                zIndex="1"
+                zIndex="3"
                 padding="0.5rem 1rem"
                 backgroundColor="rgba(157, 148, 209, 1)"
                 boxShadow="base"

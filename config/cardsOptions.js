@@ -4,6 +4,7 @@ export default [
         label: 'Кардиология',
         text: '',
         path: '/services/cardiology',
+        mobPath: '/services/cardiology',
         imgUrl: 'cardiology'
     },
     {
@@ -11,6 +12,7 @@ export default [
         label: 'Неврология',
         text: '',
         path: '/services/neurology',
+        mobPath: '/services/neurology',
         imgUrl: 'neurology'
     },
     {
@@ -18,6 +20,7 @@ export default [
         label: 'Нейрохирургия',
         text: '',
         path: '/services/neurosurgery',
+        mobPath: '/services/neurosurgery',
         imgUrl: 'neurosurgery'
     },
     {
@@ -25,6 +28,7 @@ export default [
         label: 'Терапия',
         text: '',
         path: '/services/therapy',
+        mobPath: '/services/therapy',
         imgUrl: 'therapy'
     },
     {
@@ -32,6 +36,7 @@ export default [
         label: 'Травматология и ортопедия',
         text: '',
         path: '/services/traumatology',
+        mobPath: '/services/traumatology',
         imgUrl: 'traumatology'
     },
     {
@@ -39,6 +44,7 @@ export default [
         label: 'Реабилитация после инсульта',
         text: '',
         path: '/services/rehabilitation',
+        mobPath: '/services/rehabilitation',
         imgUrl: 'rehabilitation'
     },
 ]
