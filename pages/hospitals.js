@@ -30,7 +30,7 @@ export default function Hospitals() {
                         <BasePhonesBlock/>
                     </Box>
                     <Box my="10">
-                        <Banner imgUrl="/images/hospitals.jpg"
+                        <Banner imgUrl="/images/hospitals2.jpg"
                                 label="Госпитализация в стационары ведомственной и кремлевской медицины"/>
                     </Box>
                     <Box px={{base: "2", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>

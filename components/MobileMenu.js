@@ -7,8 +7,7 @@ import {
     DrawerHeader,
     DrawerOverlay
 } from "@chakra-ui/react";
-import cardsOptions from "../config/cardsOptions.js";
-import {BaseNavLink} from "./base/BaseNavLink.js";
+import {servicesOptions} from "@/config/servicesOptions";
 import {linksOptions} from "@/config/linksOptions";
 import {useRouter} from "next/router";
 import {BaseMobLink} from "@/components/base/BaseMobLink";
@@ -31,11 +30,9 @@ export const MobileMenu = ({isOpen, onClose, placement = 'right'}) => {
                     flexDirection="column"
                     gap="0.5rem"
                 >
-                    {/*<BaseNavLink linksOptions={linksOptions} onClose={onClose} router={router}/>*/}
                     <BaseMobLink linksOptions={linksOptions} onClose={onClose} router={router}/>
                     <Divider/>
-                    {/*<BaseNavLink linksOptions={cardsOptions} onClose={onClose} router={router}/>*/}
-                    <BaseMobLink linksOptions={cardsOptions} onClose={onClose} router={router}/>
+                    <BaseMobLink linksOptions={servicesOptions} onClose={onClose} router={router}/>
                 </DrawerBody>
             </DrawerContent>
         </Drawer>

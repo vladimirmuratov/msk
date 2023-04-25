@@ -3,12 +3,12 @@ import {Box, Button, ButtonGroup} from "@chakra-ui/react";
 import {carouselOptions} from "@/config/carouselOptions";
 import {Banner} from "@/components/Banner";
 
-export const BaseCarousel = () => {
+export const BaseCarousel = ({data = []}) => {
 
     return (
         <Box>
             <Carousel>
-                {carouselOptions.map(({id, img, label, btnLabel1, btnLabel2, path}) => (
+                {data.map(({id, img, label, btnLabel1, btnLabel2, path}) => (
                     <Carousel.Item key={id}>
                         <Banner label={label} imgUrl={img}/>
                         <Carousel.Caption>

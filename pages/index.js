@@ -23,15 +23,10 @@ import {HospitalsBlock} from "@/components/HospitalsBlock";
 import {useEffect} from "react";
 import {BasePhonesBlock} from "@/components/base/BasePhonesBlock";
 import {DirectionsHospitalization} from "@/components/DirectionsHospitalization";
+import {carouselOptions} from "@/config/carouselOptions";
 
 export default function Index() {
     const {isOpen, onOpen, onClose} = useDisclosure()
-
-    useEffect(() => {
-        if ('scrollRestoration' in window.history) {
-            history.scrollRestoration = 'manual';
-        }
-    }, [])
 
     /*return (
         <>
@@ -187,7 +182,7 @@ export default function Index() {
                 >
                     <BasePhonesBlock/>
                     <Box width="full">
-                        <BaseCarousel/>
+                        <BaseCarousel data={carouselOptions}/>
                     </Box>
                     <Box
                         px={{base: "3", md: "0"}}

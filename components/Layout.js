@@ -5,6 +5,7 @@ import {Content} from "@/components/Content";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import {MobileMenu} from "@/components/MobileMenu";
+import {useEffect} from "react";
 
 export const Layout = ({children}) => {
     const [isMobileMenuOpen, setMobileMenu] = useState(false)
@@ -12,6 +13,12 @@ export const Layout = ({children}) => {
     const handelOpen = () => setMobileMenu(true)
 
     const handelClose = () => setMobileMenu(false)
+
+    useEffect(() => {
+        if ('scrollRestoration' in window.history) {
+            history.scrollRestoration = 'manual';
+        }
+    }, [])
 
     return (
         <Box>

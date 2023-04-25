@@ -2,7 +2,7 @@ export const carouselOptions = [
     {
         id: 1,
         label: 'Круглосуточная госпитализация',
-        img: '/images/carousel/hospitalization.png',
+        img: '/images/carousel/hospitalization2.png',
         btnLabel1: 'Заказать',
         btnLabel2: 'Подробнее',
         path: ''
@@ -10,7 +10,7 @@ export const carouselOptions = [
     {
         id: 2,
         label: 'Скорая помощь',
-        img: '/images/carousel/ambulance.png',
+        img: '/images/carousel/ambulance2.png',
         btnLabel1: 'Вызвать',
         btnLabel2: 'Подробнее',
         path: ''
@@ -18,7 +18,7 @@ export const carouselOptions = [
     {
         id: 3,
         label: 'ФГБУ «Клиническая больница №1»',
-        img: '/images/carousel/volynka.jpg',
+        img: '/images/carousel/volynka2.jpg',
         btnLabel1: 'Заказать',
         btnLabel2: 'Подробнее',
         path: ''
@@ -26,7 +26,7 @@ export const carouselOptions = [
     {
         id: 4,
         label: 'ФГБУ ОБП',
-        img: '/images/carousel/obp.jpg',
+        img: '/images/carousel/obp2.jpg',
         btnLabel1: 'Заказать',
         btnLabel2: 'Подробнее',
         path: ''

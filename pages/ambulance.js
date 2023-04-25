@@ -23,7 +23,7 @@ export default function Ambulance() {
                 <Box px={{base: "1", md: "1rem"}} flexGrow="1">
                     <BaseBtnBack/>
                     <Heading my="10" size={{base: "lg"}}>Скорая помощь</Heading>
-                    <Banner imgUrl="../images/ambulance.png" label="Когда важна каждая минута"/>
+                    <Banner imgUrl="../images/ambulance2.png" label="Когда важна каждая минута"/>
                     <Box mt="10" display="flex" flexDirection="column" gap="4">
                         <Heading size="lg">Вызов скорой помощи</Heading>
                         <Heading size="lg">Экстренная и неотложная медицинская помощь</Heading>
