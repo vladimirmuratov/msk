@@ -4,7 +4,7 @@ export const BaseBtnCall = ({onClick, btnLabel}) => {
     return (
         <Box
             onClick={onClick}
-            backgroundColor="red.500"
+            bgColor="red.500"
             color="white"
             py="4"
             width={{base: "full", md: "40%", lg: "30%"}}
@@ -12,7 +12,7 @@ export const BaseBtnCall = ({onClick, btnLabel}) => {
             textAlign="center"
             cursor="pointer"
             boxShadow="xl"
-            _hover={{boxShadow: "2xl"}}
+            _hover={{boxShadow: "2xl", bgColor: "red.400", color: "gray.700"}}
             _pressed={{boxShadow: "xl"}}
             transition="0.3s"
         >

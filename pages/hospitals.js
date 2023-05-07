@@ -25,10 +25,10 @@ export default function Hospitals() {
             </Head>
             <Layout>
                 <Box px={{base: "1px", md: "5"}} flexGrow="1">
-                    <BaseBtnBack/>
+                    {/*<BaseBtnBack/>
                     <Box mt={{base: "10", md: "0"}}>
                         <BasePhonesBlock/>
-                    </Box>
+                    </Box>*/}
                     <Box my="10">
                         <Banner imgUrl="/images/hospitals2.jpg"
                                 label="Госпитализация в стационары ведомственной и кремлевской медицины"/>

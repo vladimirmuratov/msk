@@ -1,6 +1,6 @@
 import {Box, Heading, Image} from "@chakra-ui/react";
 
-export const Banner = ({imgUrl, label}) => {
+export const Banner = ({imgUrl, label, color = "white", textShadow = "#000"}) => {
     return(
         <Box
             mt="10"
@@ -13,14 +13,17 @@ export const Banner = ({imgUrl, label}) => {
                 width="full"
             />
             <Heading
-                textShadow='1px 1px #000'
+                textShadow={`2px 2px ${textShadow}`}
                 position="absolute"
                 top="45%"
                 left="50%"
-                color="white"
+                color={color}
                 // whiteSpace="nowrap"
-                size={{base: "md", md: "xl"}}
-                style={{transform: "translate(-50%, -50%)"}}
+                size={{base: "2xl", md: "3xl", lg: "4xl"}}
+                style={{
+                    transform: "translate(-50%, -50%)",
+                    letterSpacing: "2px"
+                }}
             >
                 {label}
             </Heading>

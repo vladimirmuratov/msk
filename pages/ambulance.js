@@ -21,7 +21,6 @@ export default function Ambulance() {
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px={{base: "1", md: "1rem"}} flexGrow="1">
-                    <BaseBtnBack/>
                     <Heading my="10" size={{base: "lg"}}>Скорая помощь</Heading>
                     <Banner imgUrl="../images/ambulance2.png" label="Когда важна каждая минута"/>
                     <Box mt="10" display="flex" flexDirection="column" gap="4">

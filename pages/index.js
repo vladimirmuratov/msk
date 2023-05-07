@@ -180,7 +180,7 @@ export default function Index() {
                     flexDir="column"
                     px={{md: "5"}}
                 >
-                    <BasePhonesBlock/>
+                    {/*<BasePhonesBlock/>*/}
                     <Box width="full">
                         <BaseCarousel data={carouselOptions}/>
                     </Box>

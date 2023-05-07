@@ -20,7 +20,6 @@ export default function Service() {
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px="1rem">
-                    <BaseBtnBack/>
                     <Banner imgUrl="./images/services-main.png" label="Мы готовы взять на себя заботу о Вашем здоровье прямо сейчас"/>
                     <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
                     <List spacing="4" mb="8">
