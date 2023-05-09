@@ -32,7 +32,9 @@ export const Layout = ({children}) => {
                     display="flex"
                     flexDir={{base: "column", md: "row"}}
                     justifyContent="space-between"
-                    mx={{base: "2px", md: "5px"}}
+                    alignItems="center"
+                    px={{base: "2", md: "4"}}
+                    mt={{base: "4", md: "0"}}
                 >
                     <BaseBtnBack/>
                     <BasePhonesBlock/>

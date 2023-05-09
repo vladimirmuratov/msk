@@ -1,8 +1,7 @@
 import Head from "next/head";
-import {Box, Divider, Grid, GridItem, Heading, Image, List, ListItem, Text, useDisclosure} from "@chakra-ui/react";
+import {Box, Grid, GridItem, Heading, Image, Text, useDisclosure} from "@chakra-ui/react";
 import {Layout} from "@/components/Layout";
 import {BaseModal} from "@/components/base/BaseModal";
-import {BaseBtnBack} from "@/components/base/BaseBtnBack";
 import {Banner} from "@/components/Banner";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
 import {HospitalsBlock} from "@/components/HospitalsBlock";
@@ -50,7 +49,8 @@ export default function Utility() {
                             </GridItem>
                         </Grid>
                     </Box>
-                    <Box color="#0d47a1" borderTop="1px solid gray" borderBottom="1px solid gray" py="8">
+                    <Box borderBottom="1px solid gray" mt="10" mb="8"/>
+                    <Box color="#0d47a1">
                         <Heading>
                             Контроль качества и стоимости медицинской помощи,
                         </Heading>
@@ -60,26 +60,28 @@ export default function Utility() {
                         <Heading>
                             сервис и забота о пациенте в периметре одной компании -
                         </Heading>
-                        <Heading>
+                        <Heading mb="0">
                             основные принципы нашей работы и гарантии эффективного лечения для пациента.
                         </Heading>
                     </Box>
-                    <Box fontSize={{base: "20px", xl: "22px"}} bgColor="#cfd8dc" my="8" p="4" color="blackAlpha.900">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box fontSize={{base: "20px", xl: "22px"}} bgColor="#cfd8dc" my="10" p="4" color="blackAlpha.900">
                         <Text>
                             Ежегодно тысячи людей полагаются на помощь Центра госпитализации и сопровождения пациентов
                             МСК, доверяя нам свое здоровье.
                         </Text>
                     </Box>
-                    <Box color="#0d47a1" borderTop="1px solid gray" borderBottom="1px solid gray" py="8">
+                    <Box borderBottom="1px solid gray" mt="10" mb="8"/>
+                    <Box color="#0d47a1">
                         <Heading>
                             Время – самый ценный ресурс, который получают пациенты,
                         </Heading>
-                        <Heading>
+                        <Heading mb="0">
                             обратившись в Центр госпитализации и сопровождения пациентов МСК.
                         </Heading>
                     </Box>
-                    <Box fontSize={{base: "18px", xl: "22px"}} bgColor="#0d47a1" color="white"
-                         borderBottom="1px solid gray">
+                    <Box borderBottom="1px solid gray" mt="10" mb="12"/>
+                    <Box fontSize={{base: "18px", xl: "22px"}} bgColor="#0d47a1" color="white">
                         <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
                             <GridItem>
                                 <Box p="4" height="full" display="flex" justifyContent="center" alignItems="center">
@@ -95,10 +97,11 @@ export default function Utility() {
                             </GridItem>
                         </Grid>
                     </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box
                         fontSize={{base: "20px", xl: "22px"}}
                         bgColor="#cfd8dc"
-                        my="8"
+                        my="10"
                         p="4"
                         color="blackAlpha.900"
                     >
@@ -107,8 +110,13 @@ export default function Utility() {
                             зависит от сроков госпитализации пациента в стационар!
                         </Text>
                     </Box>
-                    <Box fontSize={{base: "18px", xl: "22px"}} bgColor="#0d47a1" color="white"
-                         borderTop="1px solid gray" borderBottom="1px solid gray">
+                    <Box borderBottom="1px solid gray" mb="10"/>
+                    <Box
+                        fontSize={{base: "18px", xl: "22px"}}
+                        bgColor="#0d47a1"
+                        color="white"
+                        borderBottom="1px solid gray"
+                    >
                         <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
                             <GridItem>
                                 <Image src="/images/doctor3.png" h="full"/>
@@ -126,7 +134,8 @@ export default function Utility() {
                             </GridItem>
                         </Grid>
                     </Box>
-                    <Box fontSize={{base: "20px", xl: "22px"}} my="10">
+                    <Box borderBottom="1px solid gray" mt="12" mb="8"/>
+                    <Box fontSize={{base: "20px", xl: "22px"}}>
                         <Text>
                             Мы имеем широкую провайдерскую сеть медицинских партнеров, в которую входят
                             системообразующие медицинские учреждения ведомственной и кремлевской медицины
@@ -137,7 +146,8 @@ export default function Utility() {
                             партнерам является их прозрачность и медицинская помощь высочайшего уровня.
                         </Text>
                     </Box>
-                    <Box py="8" color="#0d47a1" borderTop="1px solid gray" borderBottom="1px solid gray" display="flex"
+                    <Box borderBottom="1px solid gray" my="10"/>
+                    <Box color="#0d47a1" display="flex"
                          flexDir="column" gap="4">
                         <Heading alignSelf={{base: "start", md: "start"}}>
                             БЫСТРОЕ ОБСЛУЖИВАНИЕ
@@ -145,20 +155,22 @@ export default function Utility() {
                         <Heading alignSelf={{base: "start", md: "center"}}>
                             ВЫСОЧАЙШЕЕ КАЧЕСТВО
                         </Heading>
-                        <Heading alignSelf={{base: "start", md: "end"}}>
+                        <Heading alignSelf={{base: "start", md: "end"}} mb="0">
                             ПРОЗРАЧНАЯ СТОИМОСТЬ ЛЕЧЕНИЯ
                         </Heading>
                     </Box>
+                    <Box borderBottom="1px solid gray" my="10"/>
                     <Box
-                        my="8"
+                        my="10"
                         p="5"
                         bgColor="#0d47a1"
                         color="white"
                         fontSize={{base: "20px", xl: "22px"}}
                         fontWeight="bold"
                     >
-                        <Box mb="5" borderBottom="1px solid white" display="flex" justifyContent="center" alignItems="center">
-                            <Heading size="lg"  mb="5">
+                        <Box mb="5" borderBottom="1px solid white" display="flex" justifyContent="center"
+                             alignItems="center">
+                            <Heading size="lg" mb="5">
                                 Медицинское сопровождение по системе «Все включено»:
                             </Heading>
                         </Box>
@@ -182,7 +194,8 @@ export default function Utility() {
                             </GridItem>
                         </Grid>
                     </Box>
-                    <Box borderTop="1px solid gray" py="6">
+                    <Box borderBottom="1px solid gray" mt="10" mb="8"/>
+                    <Box>
                         <Heading size="lg">Партнерская сеть Центра госпитализации и сопровождения пациентов
                             МСК</Heading>
                         <HospitalsBlock isLocal={true}/>
