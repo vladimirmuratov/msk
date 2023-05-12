@@ -59,5 +59,5 @@ export const servicesOptions = [
     {id: 9, label: 'Кардиология', mobPath: '/services/cardiology'},
     {id: 10, label: 'Неврология', mobPath: '/services/neurology'},
     {id: 11, label: 'Терапия', mobPath: '/services/therapy'},
-    {id: 12, label: 'Лечение нарушений сна', mobPath: ''},
+    {id: 12, label: 'Реабилитация', mobPath: '/services/rehabilitation'},
 ]

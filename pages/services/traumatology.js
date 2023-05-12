@@ -173,7 +173,7 @@ export default function Traumatology() {
                         </Text>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <List spacing="5" data-aos="fade-up">
+                    <List spacing="5" data-aos="fade-up" color="#0d47a1">
                         <ListItem>
                             <Heading fontSize={{base: "18px", md: "22px", lg: "24px"}}>
                                 Консультации и экспертное мнение
