@@ -15,7 +15,8 @@ export const BaseDirectionOfHospitalizationCard = ({label, icon, path}) => {
             border="1px solid gray"
             borderRadius="5px"
             min-height="50px"
-            bgColor="#bbdefb"
+            bgColor="#0d47a1"
+            color="white"
             p="5"
             _hover={{boxShadow: "xl", transform: "translateY(-5px)"}}
             transition="0.3s"

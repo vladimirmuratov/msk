@@ -1,8 +1,6 @@
 import Head from "next/head";
 import {Layout} from "@/components/Layout";
-import {Box, Grid, GridItem, Heading, List, ListItem, Text, UnorderedList} from "@chakra-ui/react";
-import {BaseBtnBack} from "@/components/base/BaseBtnBack";
-import {BasePhonesBlock} from "@/components/base/BasePhonesBlock";
+import {Box, Grid, GridItem, Heading, List, ListItem, Text} from "@chakra-ui/react";
 import {Banner} from "@/components/Banner";
 import {BaseGridItem} from "@/components/base/BaseGridItem";
 import {CiMedicalCross} from "react-icons/ci";
@@ -26,11 +24,7 @@ export default function ObpClinic() {
                 <meta name="description" content="компания по оказанию экстренных медицинских услуг"/>
             </Head>
             <Layout>
-                <Box border="1px solid red" flexGrow="1" px={{base: "1px", md: "5"}}>
-                    <BaseBtnBack/>
-                    <Box mt={{base: "10", md: "0"}}>
-                        <BasePhonesBlock/>
-                    </Box>
+                <Box flexGrow="1" px={{base: "1px", md: "5"}} color="#0d47a1">
                     <Box my="10" textAlign={{base: "center", md: "start"}}>
                         <Heading size="lg">
                             Федеральное государственное бюджетное учреждение «Объединенная больница с поликлиникой»
@@ -39,9 +33,10 @@ export default function ObpClinic() {
                         <Text fontSize={{base: "20px", xl: "22px"}} fontWeight="bold">Мичуринский проспект, 6</Text>
                     </Box>
                     <Banner imgUrl="/images/hospitals-img/obp.jpg"
-                            label="Госпитализация в ФБГУ объединенная больница с поликлинникой Управление делами Президента РФ"
+                            label="Объединенная больница с поликлинникой Управление делами Президента РФ"
                     />
-                    <Box px={{base: "3", md: "0"}} my="10" fontSize={{base: "20px", xl: "22px"}}>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up">
                         <Heading size="lg">Инфраструктура</Heading>
                         <Text>
                             <span
@@ -67,7 +62,8 @@ export default function ObpClinic() {
                             хирургического оборудования, создавая комфортные условия пребывания пациентов в стационаре.
                         </Text>
                     </Box>
-                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p={{base: "3", md: "4"}} fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up" bgColor="#eeeeee" borderRadius="md">
                         <Heading size="lg">Стационар</Heading>
                         <Text>
                             В ФГБУ ОБП можно пройти стационарное лечение платной основе.
@@ -85,7 +81,9 @@ export default function ObpClinic() {
                             безопасности, надежности, стерильности.
                         </Text>
                     </Box>
-                    <Box my="10" px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}} textAlign="center">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}} textAlign="center"
+                         data-aos="fade-up">
                         <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", md: "repeat(3, 1fr)"}} gap="5">
                             <GridItem>
                                 <BaseGridItem icon={CiMedicalCross} value="46+"
@@ -101,13 +99,15 @@ export default function ObpClinic() {
                             </GridItem>
                         </Grid>
                     </Box>
-                    <Box my="10" textAlign="center">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box textAlign="center" data-aos="fade-up">
                         <DirectionsHospitalization
                             options={directionOfHospitalizationObpOptions}
                             label="Основные направления стационарного лечения"
                         />
                     </Box>
-                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p={{base: "3", md: "4"}} fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up" bgColor="#eeeeee" borderRadius="md">
                         <Heading size="lg">Контроль качества и безопасность пациентов</Heading>
                         <Text>
                             ФГБУ ОБП прошла сертификацию по менеджменту качества медицинских услуг и получила сертификат
@@ -123,7 +123,8 @@ export default function ObpClinic() {
                             патентами.
                         </Text>
                     </Box>
-                    <Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box data-aos="fade-up" bgColor="#e8f5e9" p="4" borderRadius="md">
                         <List px={{base: "3", md: "0"}}>
                             <ListItem display="flex" alignItems={{base: "flex-start", md: "center"}} gap="3" mb="3">
                                 <CheckCircleIcon boxSize="1.5rem" color="green.300" mt={{base: "2", md: "0"}}/>
@@ -163,7 +164,8 @@ export default function ObpClinic() {
                             </ListItem>
                         </List>
                     </Box>
-                    <Box my="10" px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p={{base: "3", md: "4"}} fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up" bgColor="#eeeeee" borderRadius="md">
                         <Heading size="lg">Комфорт и сервис</Heading>
                         <Text>
                             В ФБГУ ОБП созданы все условия для комфорта и скорейшего выздоровления пациентов -
@@ -174,43 +176,51 @@ export default function ObpClinic() {
                             лесопарка, терренкур.
                         </Text>
                     </Box>
-                    <Box px={{base: "3", md: "0"}} textAlign="center">
-                        <Heading size="lg">
-                            Пройти стационарное лечение в ФБГУ ОБП можно, обратившись в Центр госпитализации и
-                            сопровождения пациентов МСК
-                        </Heading>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box data-aos="fade-up">
+                        <Box px={{base: "3", md: "0"}} textAlign="center" mb="10">
+                            <Heading size="lg">
+                                Пройти стационарное лечение в ФБГУ ОБП можно, обратившись в Центр госпитализации и
+                                сопровождения пациентов МСК
+                            </Heading>
+                        </Box>
+                        <Box px={{base: "3", md: "0"}}>
+                            <BasePhotoGallery data={obpPhotoGalleryOptions}/>
+                        </Box>
                     </Box>
-                    <Box px={{base: "3", md: "0"}}>
-                        <BasePhotoGallery data={obpPhotoGalleryOptions}/>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box data-aos="fade-up" bgColor="#eeeeee" p="4" borderRadius="md">
+                        <Box px={{base: "3", md: "0"}} mb="10">
+                            <Heading size="lg">
+                                ФГБУ «Объединенная больница с поликлиникой» Управления делами Президента Российской
+                                Федерации.
+                            </Heading>
+                            <Heading size="lg">
+                                Москва, Мичуринский проспект, 6.
+                            </Heading>
+                        </Box>
+                        <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
+                            <Text mb="5" textDecoration="underline">Проезд на маршрутном транспорте:</Text>
+                            <Text>
+                                ст.м. «Киевская», авт. 119 (до остановки «Мичуринский проспект»), авт. 266 (до остановки
+                                «Улица Косыгина»).
+                            </Text>
+                            <Text>
+                                ст.м. «Университет», авт. 119 (до остановки «Мичуринский проспект») ст.м.«Ленинский
+                                проспект», электробус Т7 (до остановки «Улица Косыгина»)
+                            </Text>
+                            <Text>
+                                ст.м. «Ломоносовский проспект» (выход из метро в сторону Мичуринского проспекта, который
+                                обозначен №5 и №6 с указателем МГУ и ул. Академика Хохлова), авт. 266, 58 (до остановки
+                                «Улица Косыгина»).
+                            </Text>
+                        </Box>
                     </Box>
-                    <Box my="10" px={{base: "3", md: "0"}}>
-                        <Heading size="lg">
-                            ФГБУ «Объединенная больница с поликлиникой» Управления делами Президента Российской
-                            Федерации.
-                        </Heading>
-                        <Heading size="lg">
-                            Москва, Мичуринский проспект, 6.
-                        </Heading>
-                    </Box>
-                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
-                        <Text mb="5">Проезд на маршрутном транспорте:</Text>
-                        <Text>
-                            ст.м. «Киевская», авт. 119 (до остановки «Мичуринский проспект»), авт. 266 (до остановки
-                            «Улица Косыгина»).
-                        </Text>
-                        <Text>
-                            ст.м. «Университет», авт. 119 (до остановки «Мичуринский проспект») ст.м.«Ленинский
-                            проспект», электробус Т7 (до остановки «Улица Косыгина»)
-                        </Text>
-                        <Text>
-                            ст.м. «Ломоносовский проспект» (выход из метро в сторону Мичуринского проспекта, который
-                            обозначен №5 и №6 с указателем МГУ и ул. Академика Хохлова), авт. 266, 58 (до остановки
-                            «Улица Косыгина»).
-                        </Text>
-                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box px={{base: "3", md: "0"}}>
                         <BaseCallBlock btnLabel="Оставить заявку на госпитализацию"/>
                     </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box mb="10" px={{base: "3", md: "0"}}>
                         <Link
                             href="https://www.fgu-obp.ru/"

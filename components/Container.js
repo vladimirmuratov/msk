@@ -16,6 +16,7 @@ export const Container = ({children}) => {
             minH="100vh"
             padding="0"
             // bgGradient="linear(to-r, #bbdefb, #90caf9)"
+            bgColor="#fafafa"
         >
             {children}
         </Box>

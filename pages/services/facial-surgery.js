@@ -1,5 +1,4 @@
 import Head from "next/head";
-import {BaseBtnBack} from "@/components/base/BaseBtnBack";
 import {Layout} from "@/components/Layout";
 import {Box, Heading} from "@chakra-ui/react";
 
@@ -14,7 +13,6 @@ export default function FacialSurgery() {
             </Head>
             <Layout>
                 <Box px="1rem" flexGrow="1">
-                    <BaseBtnBack/>
                     <Heading my="10" size={{base: "lg"}}>Лор и челюстно-лицевая хирургия</Heading>
                 </Box>
             </Layout>

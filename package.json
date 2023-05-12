@@ -13,6 +13,7 @@
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.10.0",
     "next": "13.2.4",

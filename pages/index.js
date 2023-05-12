@@ -180,7 +180,6 @@ export default function Index() {
                     flexDir="column"
                     px={{md: "5"}}
                 >
-                    {/*<BasePhonesBlock/>*/}
                     <Box width="full">
                         <BaseCarousel data={carouselOptions}/>
                     </Box>
@@ -227,7 +226,7 @@ export default function Index() {
                                               description="вылеченных пациентов"/>
                             </GridItem>
                             <GridItem>
-                                <BaseGridItem icon={MdLocalHospital} value="726" description="докторов"/>
+                                <BaseGridItem icon={MdLocalHospital} value="46" description="докторов"/>
                             </GridItem>
                         </Grid>
                     </Box>

@@ -15,11 +15,11 @@ export const Banner = ({imgUrl, label, color = "white", textShadow = "#000"}) =>
             <Heading
                 textShadow={`2px 2px ${textShadow}`}
                 position="absolute"
-                top="45%"
+                top="50%"
                 left="50%"
                 color={color}
                 // whiteSpace="nowrap"
-                size={{base: "2xl", md: "3xl", lg: "4xl"}}
+                size={{base: "lg", md: "3xl", lg: "4xl"}}
                 style={{
                     transform: "translate(-50%, -50%)",
                     letterSpacing: "2px"

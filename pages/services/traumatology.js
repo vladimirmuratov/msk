@@ -1,5 +1,15 @@
-import {Box, Heading, List, ListItem, Text, UnorderedList, useDisclosure} from "@chakra-ui/react";
-import {BaseBtnBack} from "@/components/base/BaseBtnBack";
+import {
+    Box,
+    Grid,
+    GridItem,
+    Heading,
+    Image,
+    List,
+    ListItem,
+    Text,
+    UnorderedList,
+    useDisclosure
+} from "@chakra-ui/react";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
 import {Banner} from "@/components/Banner";
@@ -8,7 +18,7 @@ import {BaseOurValues} from "@/components/base/BaseOurValues";
 import {BaseModal} from "@/components/base/BaseModal";
 
 export default function Traumatology() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const {isOpen, onOpen, onClose} = useDisclosure()
 
     return (
         <>
@@ -20,21 +30,116 @@ export default function Traumatology() {
             </Head>
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
-                <Box px="1rem" flexGrow="1">
-                    <BaseBtnBack/>
-                    <Heading my="10" size={{base: "lg"}}>Травматология и ортопедия</Heading>
-                    <Banner imgUrl="../images/traumatology.png" label="Травматология и ортопедия"/>
-                    <Box mt="10" display="flex" flexDirection="column" gap="4">
-                        <Heading fontSize="20px">
+                <Box px={{md: "1rem"}} flexGrow="1">
+                    <Banner imgUrl="../images/traumatology.png" label="Травматология и ортопедия" color="#ff8f00"
+                            textShadow="#fff"/>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box px={{base: "4px", md: "0"}} display="flex" flexDirection="column" gap="4" color="#0d47a1"
+                         data-aos="fade-up">
+                        <Heading size="lg">
                             Организация диагностики и лечения в травматологии,ортопедии, при костной патологии и
                             реабилитации
                         </Heading>
-                        <Heading fontSize="20px">
+                        <Heading size="lg">
                             Наши специалисты всегда помогут Вам найти врача и подобрать для вас оптимальне решение.
                         </Heading>
                     </Box>
-                    <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
-                    <Box display="flex" flexDirection="column" gap="5">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box px={{base: "4px", md: "0"}}>
+                        <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
+                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box>
+                        <Box
+                            fontSize={{base: "18px", xl: "22px"}}
+                            bgColor="#0d47a1"
+                            color="white"
+                            mb="12"
+                            borderRadius="md"
+                            data-aos="fade-up"
+                        >
+                            <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
+                                <GridItem>
+                                    <Image src="/images/doctor7.png" h="full"/>
+                                </GridItem>
+                                <GridItem>
+                                    <Box p="4">
+                                        <Text>Мы оказываем содействие в организации специализированной травматолого-
+                                            ортопедической помощи.</Text>
+                                        <Text>Наша миссия - обеспечить пациентам лучшую медицинскую помощь и доступ к
+                                            новейшим мировым медицинским технологиям.</Text>
+                                        <Text>Травматология и ортопедия – одно из ключевых направлений нашей
+                                            деятельности в сопровождении пациентов</Text>
+                                    </Box>
+                                </GridItem>
+                            </Grid>
+                        </Box>
+                        <Box
+                            fontSize={{base: "18px", xl: "22px"}}
+                            bgColor="#0d47a1"
+                            color="white"
+                            mb="12"
+                            borderRadius="md"
+                            data-aos="fade-up"
+                        >
+                            <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
+                                <GridItem>
+                                    <Box p="4">
+                                        <Text>Мы имеем огромный опыт в организации лечения пациентов с травмами и
+                                            заболеваниями
+                                            опорно-двигательного аппарата.
+                                        </Text>
+                                        <Text>А также организуем лечение и помогаем пациентам с весьма сложной
+                                            патологией
+                                            опорно-двигательной системы, делаем то, что раньше казалось невозможным. А в
+                                            определенных
+                                            случаях, с помощью средств современной ортопедической хирургии - практически
+                                            полностью можно
+                                            восстановить нарушенную функцию конечности.
+                                        </Text>
+                                    </Box>
+                                </GridItem>
+                                <GridItem>
+                                    <Image src="/images/doctor8.png" h="full"/>
+                                </GridItem>
+                            </Grid>
+                        </Box>
+                        <Box
+                            fontSize={{base: "18px", xl: "22px"}}
+                            bgColor="#0d47a1"
+                            color="white"
+                            mb="12"
+                            borderRadius="md"
+                            data-aos="fade-up"
+                        >
+                            <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
+                                <GridItem>
+                                    <Image src="/images/doctor6.png" h="full"/>
+                                </GridItem>
+                                <GridItem>
+                                    <Box h="full" p="4">
+                                        <Text>Анализируя опыт зарубежных и отечественных коллег, мы можем предложить
+                                            пациентам
+                                            эндопротезирование коленного и тазобедренного сустава, или других суставов,
+                                            в
+                                            том числе при
+                                            весьма сложной и запущенной патологии.
+                                        </Text>
+                                    </Box>
+                                </GridItem>
+                            </Grid>
+                        </Box>
+                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box
+                        display="flex"
+                        flexDirection="column"
+                        gap="5"
+                        bgColor="#e8f5e9"
+                        p="4"
+                        borderRadius="md"
+                        data-aos="fade-up"
+                    >
                         <Heading fontSize="20px">Мы оказываем содействие в организации специализированной травматолого-
                             ортопедической помощи.</Heading>
                         <Heading fontSize="20px">Наша миссия - обеспечить пациентам лучшую медицинскую помощь и доступ к
@@ -42,7 +147,18 @@ export default function Traumatology() {
                         <Heading fontSize="20px">Травматология и ортопедия – одно из ключевых направлений нашей
                             деятельности в сопровождении пациентов</Heading>
                     </Box>
-                    <Box my="16" fontSize="20px" display="flex" flexDirection="column" gap="5">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box
+                        fontSize="20px"
+                        display="flex"
+                        flexDirection="column"
+                        gap="5"
+                        bgColor="#0d47a1"
+                        color="white"
+                        borderRadius="md"
+                        p="4"
+                        data-aos="fade-up"
+                    >
                         <Text>Мы имеем огромный опыт в организации лечения пациентов с травмами и заболеваниями
                             опорно-двигательного аппарата.
                         </Text>
@@ -51,32 +167,43 @@ export default function Traumatology() {
                             случаях, с помощью средств современной ортопедической хирургии - практически полностью можно
                             восстановить нарушенную функцию конечности.
                         </Text>
-                        <Text>Анализируя опыт зарубежных и отечественных коллег, мы можем предложить пациентам
+                        <Text m="0">Анализируя опыт зарубежных и отечественных коллег, мы можем предложить пациентам
                             эндопротезирование коленного и тазобедренного сустава, или других суставов, в том числе при
                             весьма сложной и запущенной патологии.
                         </Text>
                     </Box>
-                    <List spacing="5">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <List spacing="5" data-aos="fade-up">
                         <ListItem>
-                            <Heading fontSize={{base: "18px", md: "22px", lg: "24px"}}>Консультации и экспертное мнение
-                                травматологов</Heading>
+                            <Heading fontSize={{base: "18px", md: "22px", lg: "24px"}}>
+                                Консультации и экспертное мнение
+                                травматологов
+                            </Heading>
                         </ListItem>
                         <ListItem>
-                            <Heading fontSize={{base: "18px", md: "22px", lg: "24px"}}>Лучший выбор оперирующих
-                                хирургов</Heading>
+                            <Heading fontSize={{base: "18px", md: "22px", lg: "24px"}}>
+                                Лучший выбор оперирующих
+                                хирургов
+                            </Heading>
                         </ListItem>
                         <ListItem>
-                            <Heading fontSize={{base: "18px", md: "22px", lg: "24px"}}>Госпитализация в ведущие
-                                специализированные медицинские центры</Heading>
+                            <Heading fontSize={{base: "18px", md: "22px", lg: "24px"}}>
+                                Госпитализация в ведущие
+                                специализированные медицинские центры
+                            </Heading>
                         </ListItem>
                     </List>
-                    <Box my="10">
-                        <Heading mb="5" fontSize={{base: "18px", md: "22px", lg: "24px"}}>Наша команда оказывает
-                            информационную
-                            поддержку и содействие в получении плановой помощи в травматологии и ортопедии по
-                            направлениям:
-                        </Heading>
-                        <UnorderedList spacing="5" fontSize={{base: "18px", md: "22px", lg: "24px"}} fontWeight="bold">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box bgColor="#0d47a1" color="white" p="4" borderRadius="md" data-aos="fade-up">
+                        <Box mb="5" borderBottom="1px solid white" textAlign="center">
+                            <Heading fontSize={{base: "20px", md: "24px", lg: "26px"}}>Наша команда оказывает
+                                информационную
+                                поддержку и содействие в получении плановой помощи в травматологии и ортопедии по
+                                направлениям:
+                            </Heading>
+                        </Box>
+                        <UnorderedList ml="0" spacing="5" fontSize={{base: "18px", md: "22px", lg: "24px"}}
+                                       fontWeight="bold">
                             <ListItem>Эндопротезирование суставов</ListItem>
                             <ListItem>Микрохирургия и травма кисти</ListItem>
                             <ListItem>Лечение травм и их последствий</ListItem>
@@ -89,7 +216,9 @@ export default function Traumatology() {
                             <ListItem>Функциональная диагностика опорно-двигательной системы</ListItem>
                         </UnorderedList>
                     </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <BaseOurValues/>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                 </Box>
             </Layout>
         </>

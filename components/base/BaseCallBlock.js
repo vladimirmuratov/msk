@@ -4,7 +4,7 @@ import {BaseBtnCall} from "@/components/base/BaseBtnCall";
 
 export const BaseCallBlock = ({onClick, btnLabel='Заказать консультацию'}) => {
 return(
-    <Box my="20">
+    <Box my="20" data-aos="zoom-in">
         <Box textAlign="center">
             <Heading>{phoneNumber}</Heading>
         </Box>

@@ -1,5 +1,15 @@
-import {Box, Heading, List, ListItem, Text, UnorderedList, useDisclosure} from "@chakra-ui/react";
-import {BaseBtnBack} from "@/components/base/BaseBtnBack";
+import {
+    Box,
+    Grid,
+    GridItem,
+    Heading,
+    Image,
+    List,
+    ListItem,
+    Text,
+    UnorderedList,
+    useDisclosure
+} from "@chakra-ui/react";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
 import {CheckIcon} from "@chakra-ui/icons";
@@ -9,7 +19,7 @@ import {BaseOurValues} from "@/components/base/BaseOurValues";
 import {BaseModal} from "@/components/base/BaseModal";
 
 export default function Therapy() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const {isOpen, onOpen, onClose} = useDisclosure()
 
     return (
         <>
@@ -21,23 +31,30 @@ export default function Therapy() {
             </Head>
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
-                <Box px={{base: "1", md: "1rem"}} flexGrow="1">
-                    <BaseBtnBack/>
-                    <Heading my="10" size={{base: "lg"}}>Терапия</Heading>
-                    <Banner imgUrl="../images/therapy.png" label="Терапия"/>
-                    <Box mt="10" display="flex" flexDirection="column" gap="4">
-                        <Heading size="md">
+                <Box px={{base: "0", md: "1rem"}} flexGrow="1">
+                    <Banner imgUrl="../images/therapy.png" label="Терапия" color="#ff8f00" textShadow="#fff"/>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box data-aos="fade-up" color="#0d47a1" textAlign="center">
+                        <Heading size={{base: "md", md: "lg"}}>
                             Высококвалифицированные врачи общей практики
                         </Heading>
                     </Box>
-                    <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
-                    <Box>
-                        <Heading fontSize="22px" mb="5">
-                            Мы оказываем содействие в организации медицинской помощи пациентам с внутренними болезнями,
-                            которые нуждаются в длительном лечении, уходе, проведении сложных диагностических процедур
-                            по основным направлениям:
-                        </Heading>
-                        <UnorderedList spacing="2" fontSize="22px">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box px={{base: "4px", md: "0"}}>
+                        <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
+                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p="4" borderRadius="md" bgColor="#0d47a1" color="white" data-aos="fade-up">
+                        <Box borderBottom="1px solid white" mb="5">
+                            <Heading fontSize={{base: "22px", md: "24px"}}>
+                                Мы оказываем содействие в организации медицинской помощи пациентам с внутренними
+                                болезнями,
+                                которые нуждаются в длительном лечении, уходе, проведении сложных диагностических
+                                процедур
+                                по основным направлениям:
+                            </Heading>
+                        </Box>
+                        <UnorderedList spacing="2" fontSize={{base: "18px", md: "22px"}} m="0">
                             <ListItem>
                                 <Text>Организация диагностики и лечения терапевтической патологии</Text>
                             </ListItem>
@@ -63,79 +80,159 @@ export default function Therapy() {
                             </ListItem>
                         </UnorderedList>
                     </Box>
-                    <Box my="10">
-                        <Heading size="lg">
-                            Терапия – одно из ключевых направлений нашей деятельности в сопровождении пациентов
-                        </Heading>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+
+                    <Box>
+                        <Box
+                            fontSize={{base: "18px", xl: "22px"}}
+                            bgColor="#0d47a1"
+                            color="white"
+                            mb="12"
+                            borderRadius="md"
+                            data-aos="fade-up"
+                        >
+                            <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
+                                <GridItem>
+                                    <Image src="/images/doctor12.png" h="full"/>
+                                </GridItem>
+                                <GridItem>
+                                    <Box h="full" p="4" display="flex" justifyContent="center" alignItems="center">
+                                        <Heading size="lg" lineHeight="10">
+                                            Терапия – одно из ключевых направлений нашей деятельности в сопровождении
+                                            пациентов
+                                        </Heading>
+                                    </Box>
+                                </GridItem>
+                            </Grid>
+                        </Box>
+                        <Box
+                            fontSize={{base: "18px", xl: "22px"}}
+                            bgColor="#0d47a1"
+                            color="white"
+                            mb="12"
+                            borderRadius="md"
+                            data-aos="fade-up"
+                        >
+                            <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
+                                <GridItem>
+                                    <Box p="4">
+                                        <Text>Мы имеем огромный опыт в организации лечения пациентов с различными
+                                            нозологическими
+                                            формами: сердечно-сосудистой, бронхолегочной, эндокринной, нервной,
+                                            опорно-двигательной,
+                                            мочевыделительной систем, желудочно- кишечного тракта, аллергическими
+                                            заболеваниями.
+                                        </Text>
+                                    </Box>
+                                </GridItem>
+                                <GridItem>
+                                    <Image src="/images/doctor13.png" h="full"/>
+                                </GridItem>
+                            </Grid>
+                        </Box>
+                        <Box
+                            fontSize={{base: "18px", xl: "22px"}}
+                            bgColor="#0d47a1"
+                            color="white"
+                            mb="12"
+                            borderRadius="md"
+                            data-aos="fade-up"
+                        >
+                            <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
+                                <GridItem>
+                                    <Image src="/images/doctor14.png" h="full"/>
+                                </GridItem>
+                                <GridItem>
+                                    <Box p="4">
+                                        <Text>В диагностике заболеваний используется широкий спектр лабораторных
+                                            исследований, включая
+                                            генетическое, а также диагностических возможностей стационара, включая
+                                            рентгенологическую,
+                                            мультиспиральную компьютерную, магнитно-резонансную томографию,
+                                            эндоскопические методы
+                                            исследования, весь спектр ультразвуковых и ангиографических технологий в
+                                            круглосуточном
+                                            режиме.
+                                        </Text>
+                                    </Box>
+                                </GridItem>
+                            </Grid>
+                        </Box>
                     </Box>
-                    <Box fontSize="22px" display="flex" flexDirection="column" gap="4">
-                        <Text>Мы имеем огромный опыт в организации лечения пациентов с различными нозологическими
-                            формами: сердечно-сосудистой, бронхолегочной, эндокринной, нервной, опорно-двигательной,
-                            мочевыделительной систем, желудочно- кишечного тракта, аллергическими заболеваниями.
-                        </Text>
-                        <Text>В диагностике заболеваний используется широкий спектр лабораторных исследований, включая
-                            генетическое, а также диагностических возможностей стационара, включая рентгенологическую,
-                            мультиспиральную компьютерную, магнитно-резонансную томографию, эндоскопические методы
-                            исследования, весь спектр ультразвуковых и ангиографических технологий в круглосуточном
-                            режиме.</Text>
-                    </Box>
-                    <Box my="10" display="flex" justifyContent="flex-end">
+
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box py="4" bgColor="#e8f5e9" data-aos="fade-up">
                         <List spacing="2">
                             <ListItem>
                                 <Box display="flex" alignItems="center" gap="2">
                                     <CheckIcon/>
-                                    <Heading fontSize={{base: "18px", md: "22px", lg: "24px", xl: "26px"}}>Высококвалифицированные врачи общей практики</Heading>
+                                    <Heading fontSize={{base: "18px", md: "22px", lg: "24px", xl: "26px"}}>
+                                        Высококвалифицированные
+                                        врачи общей практики
+                                    </Heading>
                                 </Box>
                             </ListItem>
                             <ListItem>
                                 <Box display="flex" alignItems="center" gap="2">
                                     <CheckIcon/>
-                                    <Heading fontSize={{base: "18px", md: "22px", lg: "24px", xl: "26px"}}>Специализированная помощь пациентам терапевтического
-                                        профиля</Heading>
+                                    <Heading fontSize={{base: "18px", md: "22px", lg: "24px", xl: "26px"}}>
+                                        Специализированная
+                                        помощь пациентам терапевтического
+                                        профиля
+                                    </Heading>
                                 </Box>
                             </ListItem>
                             <ListItem>
                                 <Box display="flex" alignItems="center" gap="2">
                                     <CheckIcon/>
-                                    <Heading fontSize={{base: "18px", md: "22px", lg: "24px", xl: "26px"}}>Госпитализация в терапевтические отделения</Heading>
+                                    <Heading fontSize={{base: "18px", md: "22px", lg: "24px", xl: "26px"}}>
+                                        Госпитализация
+                                        в терапевтические отделения
+                                    </Heading>
                                 </Box>
                             </ListItem>
                         </List>
                     </Box>
-                    <Box>
-                        <Heading mb="5" fontSize="24px">Наша команда оказывает содействие в госпитализации в
-                            терапевтические
-                            отделения пациентам со следующей патологией:
-                        </Heading>
-                        <UnorderedList spacing="2">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p="4" borderRadius="md" bgColor="#0d47a1" color="white" data-aos="fade-up">
+                        <Box borderBottom="1px solid white" mb="4">
+                            <Heading mb="5" size="lg">Наша команда оказывает содействие в
+                                госпитализации в
+                                терапевтические
+                                отделения пациентам со следующей патологией:
+                            </Heading>
+                        </Box>
+                        <UnorderedList spacing="2" ml="0" fontSize={{base: "18px", md: "22px"}}>
                             <ListItem>
-                                <Text fontSize="22px">Заболевания гастроэнтерологического профиля (язвенная болезнь
+                                <Text>Заболевания гастроэнтерологического профиля (язвенная болезнь
                                     желудка и 12-перстной кишки, ГЭРБ, колит, цирроз печени, хронический гепатит
                                     неинфекционной этиологии и др)
                                 </Text>
                             </ListItem>
                             <ListItem>
-                                <Text fontSize="22px">Анемии, заболевания опорно-двигательной системы (ревматоидный
+                                <Text>Анемии, заболевания опорно-двигательной системы (ревматоидный
                                     полиартрит, подагра и др)
                                 </Text>
                             </ListItem>
                             <ListItem>
-                                <Text fontSize="22px">Бронхо-лёгочной системы (бронхиальная астма, хронический
+                                <Text>Бронхо-лёгочной системы (бронхиальная астма, хронический
                                     обструктивный бронхит, бронхоэктатическая болезнь, пневмонии)
                                 </Text>
                             </ListItem>
                             <ListItem>
-                                <Text fontSize="22px">Сахарный диабет</Text>
+                                <Text>Сахарный диабет</Text>
                             </ListItem>
                             <ListItem>
-                                <Text fontSize="22px">Заболевания сердечно-сосудистой системы (гипертоническая болезнь,
+                                <Text>Заболевания сердечно-сосудистой системы (гипертоническая болезнь,
                                     ИБС, хроническая сердечная недостаточность, стабильная стенокардия, постинфарктный
                                     кардиосклероз)
                                 </Text>
                             </ListItem>
                         </UnorderedList>
                     </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <BaseOurValues/>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                 </Box>
             </Layout>
         </>

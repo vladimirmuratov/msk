@@ -17,12 +17,6 @@ export const Layout = ({children}) => {
 
     const handelClose = () => setMobileMenu(false)
 
-    useEffect(() => {
-        if ('scrollRestoration' in window.history) {
-            history.scrollRestoration = 'manual';
-        }
-    }, [])
-
     return (
         <Box>
             <MobileMenu isOpen={isMobileMenuOpen} onClose={handelClose}/>

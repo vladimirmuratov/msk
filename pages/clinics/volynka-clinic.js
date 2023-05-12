@@ -1,21 +1,15 @@
 import Head from "next/head";
 import {Layout} from "@/components/Layout";
 import {Box, Grid, GridItem, Heading, List, ListItem, Text, UnorderedList} from "@chakra-ui/react";
-import {BaseBtnBack} from "@/components/base/BaseBtnBack";
-import {BasePhonesBlock} from "@/components/base/BasePhonesBlock";
 import {Banner} from "@/components/Banner";
 import {BaseGridItem} from "@/components/base/BaseGridItem";
 import {CiMedicalCross} from "react-icons/ci";
 import {FaBed} from "react-icons/fa";
 import {AiOutlineUserAdd} from "react-icons/ai";
 import {DirectionsHospitalization} from "@/components/DirectionsHospitalization";
-import {
-    directionOfHospitalizationObpOptions,
-    directionsOfHospitalizationVolynkaOptions
-} from "@/config/directionsOfHospitalizationOptions";
+import {directionsOfHospitalizationVolynkaOptions} from "@/config/directionsOfHospitalizationOptions";
 import {CheckCircleIcon} from "@chakra-ui/icons";
 import {BasePhotoGallery} from "@/components/base/BasePhotoGallery";
-import {obpPhotoGalleryOptions} from "@/config/photoGalleries/obpPhotoGalleryOptions";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
 import Link from "next/link";
 import {volynkaPhotoGalleryOptions} from "@/config/photoGalleries/volynkaPhotoGalleryOptions";
@@ -30,11 +24,7 @@ export default function VolynkaClinic() {
                 <meta name="description" content="компания по оказанию экстренных медицинских услуг"/>
             </Head>
             <Layout>
-                <Box border="1px solid red" flexGrow="1" px={{base: "1px", md: "5"}}>
-                    <BaseBtnBack/>
-                    <Box mt={{base: "10", md: "0"}}>
-                        <BasePhonesBlock/>
-                    </Box>
+                <Box flexGrow="1" px={{base: "1px", md: "5"}} color="#0d47a1">
                     <Box my="10" textAlign={{base: "center", md: "start"}}>
                         <Heading size="lg">
                             Главная Стационары ФГБУ «Клиническая больница №1» (Волынская)
@@ -47,9 +37,10 @@ export default function VolynkaClinic() {
                         <Text fontSize={{base: "20px", xl: "22px"}} fontWeight="bold">ул. Староволынская, 10</Text>
                     </Box>
                     <Banner imgUrl="/images/hospitals-img/volynka.jpg"
-                            label='Госпитализация в ФБГУ "Клиническая больница №1" Управление делами Президента РФ (Волынская)'
+                            label='Клиническая больница №1 Управление делами Президента РФ (Волынская)'
                     />
-                    <Box px={{base: "3", md: "0"}} my="10" fontSize={{base: "20px", xl: "22px"}}>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up">
                         <Heading size="lg">Инфраструктура</Heading>
                         <Text>
                             <span
@@ -80,7 +71,8 @@ export default function VolynkaClinic() {
                             реабилитации.
                         </Text>
                     </Box>
-                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up">
                         <Heading size="lg">Стационар</Heading>
                         <Text>
                             В ФГБУ "Клиническая больница №1" Управления делами Президента РФ (Волынская) можно пройти
@@ -103,7 +95,8 @@ export default function VolynkaClinic() {
                             проводится более 6 тысяч хирургических операций.
                         </Text>
                     </Box>
-                    <Box my="10" px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}} textAlign="center">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}} textAlign="center" data-aos="fade-up">
                         <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", md: "repeat(3, 1fr)"}} gap="5">
                             <GridItem>
                                 <BaseGridItem icon={CiMedicalCross} value="20+"
@@ -119,19 +112,21 @@ export default function VolynkaClinic() {
                             </GridItem>
                         </Grid>
                     </Box>
-                    <Box my="10" textAlign="center">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box textAlign="center" data-aos="fade-up">
                         <DirectionsHospitalization
                             options={directionsOfHospitalizationVolynkaOptions}
                             label="Основные направления стационарного лечения"
                         />
                     </Box>
-                    <Box mb="10" px={{base: "3", md: "0"}}>
+                    <Box mt="10" px={{base: "3", md: "0"}}>
                         <Link
                             href="https://volynka.ru/About"
                             target="_blank"
                             style={{color: "#1976d2", textDecoration: "underline"}}>Подробнее</Link>
                     </Box>
-                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up">
                         <Heading size="lg">Инновационная хирургия и уникальные методики</Heading>
                         <Text>
                             «Больница высоких технологий» - так называют Волынскую больницу в профессиональном
@@ -152,7 +147,8 @@ export default function VolynkaClinic() {
                             квалификационные категории.
                         </Text>
                     </Box>
-                    <Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box bgColor="#e8f5e9" p="4" borderRadius="md" data-aos="fade-up">
                         <List px={{base: "3", md: "0"}}>
                             <ListItem display="flex" alignItems={{base: "flex-start", md: "center"}} gap="3" mb="3">
                                 <CheckCircleIcon boxSize="1.5rem" color="green.300" mt={{base: "2", md: "0"}}/>
@@ -187,7 +183,8 @@ export default function VolynkaClinic() {
                             </ListItem>
                         </List>
                     </Box>
-                    <Box my="10" px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up">
                         <Heading size="lg">Комфорт и сервис</Heading>
                         <Text>
                             Чистота в отделениях, уют, доброжелательная атмосфера, приветливость персонала завоёвывают
@@ -199,39 +196,49 @@ export default function VolynkaClinic() {
                             деревьев лесопарка, площадью более 17 гектаров.
                         </Text>
                     </Box>
-                    <Box px={{base: "3", md: "0"}} textAlign="center">
-                        <Heading size="lg">
-                            Пройти стационарное лечение в ФГБУ «Клиническая больница №1» (Волынская) Управления делами
-                            Президента РФ можно, обратившись в Центр госпитализации и сопровождения пациентов МСК
-                        </Heading>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box data-aos="fade-up">
+                        <Box px={{base: "3", md: "0"}} textAlign="center" mb="10">
+                            <Heading size="lg">
+                                Пройти стационарное лечение в ФГБУ «Клиническая больница №1» (Волынская) Управления
+                                делами
+                                Президента РФ можно, обратившись в Центр госпитализации и сопровождения пациентов МСК
+                            </Heading>
+                        </Box>
+                        <Box px={{base: "3", md: "0"}}>
+                            <BasePhotoGallery data={volynkaPhotoGalleryOptions}/>
+                        </Box>
                     </Box>
-                    <Box px={{base: "3", md: "0"}}>
-                        <BasePhotoGallery data={volynkaPhotoGalleryOptions}/>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p={{base: "3", md: "4"}} borderRadius="md" bgColor="#eeeeee" data-aos="fade-up">
+                        <Box px={{base: "3", md: "0"}} mb="10">
+                            <Heading size="lg">
+                                Федеральное государственное бюджетное учреждение "Клиническая больница №1" Управления
+                                делами
+                                Президента РФ (Волынская)
+                            </Heading>
+                            <Heading size="lg">
+                                Москва, ул. Староволынская, 10
+                            </Heading>
+                        </Box>
+                        <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
+                            <Text mb="5" textDecoration="underline">Проезд на маршрутном транспорте:</Text>
+                            <Text fontWeight="bold">Маршруты общественного транспорта до остановки «Больница №1»:</Text>
+                            <UnorderedList ml={{base: "0", md: "5"}}>
+                                <ListItem>м. Славянский бульвар — автобусы 325, 329, 341, 641</ListItem>
+                                <ListItem>м. Минская — автобус П209</ListItem>
+                                <ListItem>м. Филевский Парк — автобус 107 (примерно 10-15 минут)</ListItem>
+                                <ListItem>м. Университет — автобусы или маршрутка 260 (примерно 25 минут)</ListItem>
+                                <ListItem>м. Киевская — автобус 474</ListItem>
+                                <ListItem>пл. Матвеевская Киевского направления РЖД — автобусы 107, 641</ListItem>
+                            </UnorderedList>
+                        </Box>
                     </Box>
-                    <Box my="10" px={{base: "3", md: "0"}}>
-                        <Heading size="lg">
-                            Федеральное государственное бюджетное учреждение "Клиническая больница №1" Управления делами
-                            Президента РФ (Волынская)
-                        </Heading>
-                        <Heading size="lg">
-                            Москва, ул. Староволынская, 10
-                        </Heading>
-                    </Box>
-                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}}>
-                        <Text mb="5">Проезд на маршрутном транспорте:</Text>
-                        <Text fontWeight="bold">Маршруты общественного транспорта до остановки «Больница №1»:</Text>
-                        <UnorderedList ml={{base: "0", md: "5"}}>
-                            <ListItem>м. Славянский бульвар — автобусы 325, 329, 341, 641</ListItem>
-                            <ListItem>м. Минская — автобус П209</ListItem>
-                            <ListItem>м. Филевский Парк — автобус 107 (примерно 10-15 минут)</ListItem>
-                            <ListItem>м. Университет — автобусы или маршрутка 260 (примерно 25 минут)</ListItem>
-                            <ListItem>м. Киевская — автобус 474</ListItem>
-                            <ListItem>пл. Матвеевская Киевского направления РЖД — автобусы 107, 641</ListItem>
-                        </UnorderedList>
-                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box px={{base: "3", md: "0"}}>
                         <BaseCallBlock btnLabel="Оставить заявку на госпитализацию"/>
                     </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box mb="10" px={{base: "3", md: "0"}}>
                         <Link
                             href="https://volynka.ru/"
