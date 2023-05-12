@@ -21,9 +21,9 @@ export default function App({Component, pageProps}) {
         });
     }, []);
 
-    /*useEffect(() => {
+    useEffect(() => {
         AOS.refresh()
-    }, [])*/
+    }, [])
 
     return (
         <ChakraProvider theme={theme}>
