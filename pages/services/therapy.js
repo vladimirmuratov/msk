@@ -31,7 +31,7 @@ export default function Therapy() {
             </Head>
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
-                <Box px={{base: "0", md: "1rem"}} flexGrow="1">
+                <Box px={{base: "4px", md: "1rem"}} flexGrow="1">
                     <Banner imgUrl="../images/therapy.png" label="Терапия" color="#ff8f00" textShadow="#fff"/>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box data-aos="fade-up" color="#0d47a1" textAlign="center">
@@ -45,8 +45,8 @@ export default function Therapy() {
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box p="4" borderRadius="md" bgColor="#0d47a1" color="white" data-aos="fade-up">
-                        <Box borderBottom="1px solid white" mb="5">
-                            <Heading fontSize={{base: "22px", md: "24px"}}>
+                        <Box borderBottom="1px solid white" mb="5" ml="4">
+                            <Heading fontSize={{base: "22px", md: "24px"}} letterSpacing="wide">
                                 Мы оказываем содействие в организации медицинской помощи пациентам с внутренними
                                 болезнями,
                                 которые нуждаются в длительном лечении, уходе, проведении сложных диагностических
@@ -161,8 +161,8 @@ export default function Therapy() {
                     </Box>
 
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box py="4" bgColor="#e8f5e9" data-aos="fade-up">
-                        <List spacing="2">
+                    <Box p="4" bgColor="#e8f5e9" color="#66bb6a" data-aos="fade-up">
+                        <List pl="0" spacing="2">
                             <ListItem>
                                 <Box display="flex" alignItems="center" gap="2">
                                     <CheckIcon/>
@@ -195,7 +195,7 @@ export default function Therapy() {
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box p="4" borderRadius="md" bgColor="#0d47a1" color="white" data-aos="fade-up">
-                        <Box borderBottom="1px solid white" mb="4">
+                        <Box borderBottom="1px solid white" mb="4" ml="4">
                             <Heading mb="5" size="lg">Наша команда оказывает содействие в
                                 госпитализации в
                                 терапевтические

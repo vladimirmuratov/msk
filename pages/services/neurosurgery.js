@@ -30,11 +30,11 @@ export default function Neurosurgery() {
             </Head>
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
-                <Box px="1rem" flexGrow="1">
+                <Box px={{base: "4px", md: "1rem"}} flexGrow="1">
                     <Banner imgUrl="../images/neurosurgery2.png" label="Нейрохирургия" color="#ff8f00"
                             textShadow="#fff"/>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box mt="10" display="flex" flexDirection="column" gap="4" color="#0d47a1" data-aos="fade-right">
+                    <Box mt="10" display="flex" flexDirection="column" gap="4" color="#0d47a1" data-aos="fade-up">
                         <Heading size="lg">
                             Организация лечения широкого спектра нейрохирургической патологии.
                         </Heading>
@@ -52,7 +52,7 @@ export default function Neurosurgery() {
                             color="white"
                             mb="12"
                             borderRadius="md"
-                            data-aos="fade-down"
+                            data-aos="fade-up"
                         >
                             <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
                                 <GridItem>
@@ -115,7 +115,7 @@ export default function Neurosurgery() {
                             color="white"
                             mb="12"
                             borderRadius="md"
-                            data-aos="fade-down"
+                            data-aos="fade-up"
                         >
                             <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
                                 <GridItem>
@@ -132,14 +132,14 @@ export default function Neurosurgery() {
                         </Box>
                         <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                         <Box p="4" borderRadius="md" display="flex" flexDirection="column" bgColor="#0d47a1"
-                             color="white" data-aos="zoom-in">
-                            <Box borderBottom="1px solid white" mb="4" textAlign="center">
+                             color="white" data-aos="fade-up">
+                            <Box borderBottom="1px solid white" mb="4" ml="4">
                                 <Heading size="lg">
                                     Наша команда оказывает содействие в организации медицинской помощи пациентам с
                                     заболеваниями:
                                 </Heading>
                             </Box>
-                            <List spacing="2" fontSize={{md: "20px"}}>
+                            <UnorderedList ml="0" spacing="2" fontSize={{md: "20px"}}>
                                 <ListItem>
                                     <Text fontWeight="bold">Опухоли головного и спинного мозга</Text>
                                 </ListItem>
@@ -164,7 +164,7 @@ export default function Neurosurgery() {
                                         фармакорезистентной эпилепсии
                                     </Text>
                                 </ListItem>
-                            </List>
+                            </UnorderedList>
                         </Box>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>

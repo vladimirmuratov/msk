@@ -124,13 +124,13 @@ export default function Neurology() {
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box p="4" borderRadius="md" bgColor="#0d47a1" color="white" data-aos="fade-up">
-                        <Box borderBottom="1px solid white" textAlign="center" mb="4">
+                        <Box borderBottom="1px solid white" mb="4" ml="4">
                             <Heading size="lg" mb="4">
                                 Наша команда оказывает содействие в организации медицинской помощи пациентам с
                                 заболеваниями:
                             </Heading>
                         </Box>
-                        <UnorderedList spacing="2" fontSize="18px" fontWeight="bold">
+                        <UnorderedList ml="0" spacing="2" fontSize="18px" fontWeight="bold">
                             <ListItem>Экстрапирамидной нервной системы</ListItem>
                             <ListItem>Периферической нервной системы</ListItem>
                             <ListItem>Обморочными состояниями</ListItem>

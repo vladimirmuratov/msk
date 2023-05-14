@@ -1,4 +1,15 @@
-import {Box, Grid, GridItem, Heading, Image, List, ListItem, Text, useDisclosure} from "@chakra-ui/react";
+import {
+    Box,
+    Grid,
+    GridItem,
+    Heading,
+    Image,
+    List,
+    ListItem,
+    Text,
+    UnorderedList,
+    useDisclosure
+} from "@chakra-ui/react";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
 import {Banner} from "@/components/Banner";
@@ -115,6 +126,7 @@ export default function Cardiology() {
                         p="4"
                         borderRadius="md"
                         fontSize="18px"
+                        fontWeight="semibold"
                         display="flex"
                         flexDirection="column"
                         gap="4"
@@ -133,14 +145,14 @@ export default function Cardiology() {
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box bgColor="#0d47a1" color="white" p="4" borderRadius="md" data-aos="fade-up">
-                        <Box borderBottom="1px solid white" textAlign="center">
+                        <Box ml="4" mb="4" borderBottom="1px solid white">
                             <Heading size="lg">
                                 Мы оказываем информационную поддержку и содействие в получении своевременной и
                                 качественной
                                 медицинской помощи пациентам с сердечно - сосудистыми заболеваниями:
                             </Heading>
                         </Box>
-                        <List spacing={{base: "2", md: "4"}} my="10" fontSize="20" fontWeight="bold">
+                        <UnorderedList ml="0" spacing={{base: "2", md: "4"}} fontSize="20" fontWeight="bold">
                             <ListItem>Артериальная гипертония</ListItem>
                             <ListItem>Ишемическая болезнь сердца</ListItem>
                             <ListItem>Нарушения ритма сердца</ListItem>
@@ -150,7 +162,7 @@ export default function Cardiology() {
                             <ListItem>Аневризмы</ListItem>
                             <ListItem>Патологии сосудов</ListItem>
                             <ListItem>Болезни сердца при других заболеваниях</ListItem>
-                        </List>
+                        </UnorderedList>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <BaseOurValues/>

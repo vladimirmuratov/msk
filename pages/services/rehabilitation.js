@@ -54,7 +54,7 @@ export default function Rehabilitation() {
                                 </GridItem>
                                 <GridItem>
                                     <Box p="4" h="full" display="flex" justifyContent="center" alignItems="center">
-                                        <Heading size="lg">
+                                        <Heading size="lg" letterSpacing="wide">
                                             Содействие в получении специализированной помощи по реабилитации после
                                             инсульта в лучших
                                             сосудистых и реабилитационных центрах
@@ -74,7 +74,7 @@ export default function Rehabilitation() {
                             <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
                                 <GridItem>
                                     <Box p="4" h="full" display="flex" justifyContent="center" alignItems="center">
-                                        <Heading size="lg">
+                                        <Heading size="lg" letterSpacing="wide">
                                             Комплексное восстановительное лечение пациентов, перенесших инсульт
                                         </Heading>
                                     </Box>
@@ -89,7 +89,7 @@ export default function Rehabilitation() {
                     <Box p="4" borderRadius="md" display="flex" flexDirection="column" bgColor="#0d47a1"
                          color="white" data-aos="fade-up">
                         <Box borderBottom="1px solid white" mb="6" textAlign="center">
-                            <Heading size="lg">
+                            <Heading size="lg" letterSpacing="wide">
                                 Индивидуальная программа реабилитации после инсульта
                             </Heading>
                         </Box>
@@ -117,6 +117,7 @@ export default function Rehabilitation() {
                                         color="white"
                                         p="4"
                                         fontSize="18px"
+                                        borderRadius="md"
                                     >
                                         <Text>{title}</Text>
                                         <Text>{description}</Text>
@@ -127,8 +128,8 @@ export default function Rehabilitation() {
                         </Box>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box bgColor="#ffcdd2" p="4" borderRadius="md" data-aos="fade-up">
-                        <List mt="4" spacing="4" fontSize={{base: "20px", xl: "22px"}} fontWeight="bold">
+                    <Box bgColor="#ffcdd2" color="#ef5350" p="4" borderRadius="md" data-aos="fade-up">
+                        <List pl="0" spacing="4" fontSize={{base: "20px", xl: "22px"}} fontWeight="bold">
                             <ListItem display="flex" gap="4" textAlign="start">
                                 <Icon as={WarningIcon} color="red" mt="2"/>
                                 <Text>Летальность от инсульта достигает 40–50%</Text>

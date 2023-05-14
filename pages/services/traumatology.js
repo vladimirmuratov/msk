@@ -30,7 +30,7 @@ export default function Traumatology() {
             </Head>
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
-                <Box px={{md: "1rem"}} flexGrow="1">
+                <Box px={{base: "4px", md: "1rem"}} flexGrow="1">
                     <Banner imgUrl="../images/traumatology.png" label="Травматология и ортопедия" color="#ff8f00"
                             textShadow="#fff"/>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
@@ -135,17 +135,19 @@ export default function Traumatology() {
                         display="flex"
                         flexDirection="column"
                         gap="5"
+                        fontSize="20px"
+                        fontWeight="semibold"
                         bgColor="#e8f5e9"
                         p="4"
                         borderRadius="md"
                         data-aos="fade-up"
                     >
-                        <Heading fontSize="20px">Мы оказываем содействие в организации специализированной травматолого-
-                            ортопедической помощи.</Heading>
-                        <Heading fontSize="20px">Наша миссия - обеспечить пациентам лучшую медицинскую помощь и доступ к
-                            новейшим мировым медицинским технологиям.</Heading>
-                        <Heading fontSize="20px">Травматология и ортопедия – одно из ключевых направлений нашей
-                            деятельности в сопровождении пациентов</Heading>
+                        <Text>Мы оказываем содействие в организации специализированной травматолого-
+                            ортопедической помощи.</Text>
+                        <Text>Наша миссия - обеспечить пациентам лучшую медицинскую помощь и доступ к
+                            новейшим мировым медицинским технологиям.</Text>
+                        <Text>Травматология и ортопедия – одно из ключевых направлений нашей
+                            деятельности в сопровождении пациентов</Text>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box
@@ -195,15 +197,14 @@ export default function Traumatology() {
                     </List>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box bgColor="#0d47a1" color="white" p="4" borderRadius="md" data-aos="fade-up">
-                        <Box mb="5" borderBottom="1px solid white" textAlign="center">
-                            <Heading fontSize={{base: "20px", md: "24px", lg: "26px"}}>Наша команда оказывает
+                        <Box mb="4" ml="4" borderBottom="1px solid white">
+                            <Heading fontSize={{base: "20px", md: "24px", lg: "26px"}} letterSpacing="wide">Наша команда оказывает
                                 информационную
                                 поддержку и содействие в получении плановой помощи в травматологии и ортопедии по
                                 направлениям:
                             </Heading>
                         </Box>
-                        <UnorderedList ml="0" spacing="5" fontSize={{base: "18px", md: "22px", lg: "24px"}}
-                                       fontWeight="bold">
+                        <UnorderedList ml="0" spacing="5" fontSize={{base: "18px", md: "22px", lg: "24px"}}>
                             <ListItem>Эндопротезирование суставов</ListItem>
                             <ListItem>Микрохирургия и травма кисти</ListItem>
                             <ListItem>Лечение травм и их последствий</ListItem>
