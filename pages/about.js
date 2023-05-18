@@ -1,6 +1,4 @@
 import {Box, Heading, List, ListItem, Text, useDisclosure} from "@chakra-ui/react";
-import {BaseBtnBack} from "@/components/base/BaseBtnBack";
-import {BaseTitlePage} from "@/components/base/BaseTitlePage";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
 import {CheckIcon} from "@chakra-ui/icons";
@@ -10,7 +8,7 @@ import {BaseCallBlock} from "@/components/base/BaseCallBlock";
 import {BaseModal} from "@/components/base/BaseModal";
 
 export default function About() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const {isOpen, onOpen, onClose} = useDisclosure()
 
     return (
         <>
@@ -22,15 +20,19 @@ export default function About() {
             </Head>
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
-                <Box px="1rem">
-                    <BaseBtnBack/>
-                    <Banner imgUrl="./images/about-main.png" label="МСК  - ваш гид в вопросах здоровья"/>
-                    <BaseTitlePage title="О нас"/>
-                    <Box display="flex" flexDirection="column" gap="4" fontSize="18px">
+                <Box px={{base: "4px", md: "1rem"}} color="#0d47a1">
+                    <Banner imgUrl="./images/doctor8.png" label="МСК  - ваш гид в вопросах здоровья" color="#ff8f00"
+                            textShadow="white"/>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box px="4" data-aos="fade-up">
                         <Heading size="lg">
                             Мы российская ассистанс - компания, оказывающая профессиональную сервисную поддержку в
                             организации медицинских услуг.
                         </Heading>
+                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p="4" borderRadius="lg" fontSize={{base: "20px", xl: "22px"}} fontWeight="semibold"
+                         bgColor="#eeeeee" data-aos="fade-up">
                         <Text>Являемся национальным провайдером в обеспечении качества и доступности медицинской
                             помощи.</Text>
                         <Text>
@@ -45,11 +47,28 @@ export default function About() {
                         <Text>
                             МСК - ваш гид в вопросах здоровья.
                         </Text>
-                        <Heading size="lg">Чем мы занимаемся?</Heading>
-                        <List spacing="4">
+                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box
+                        display="flex"
+                        flexDirection="column"
+                        alignItems="center"
+                        gap="4"
+                        fontSize={{base: "20px", xl: "22px"}}
+                        bgColor="#0d47a1"
+                        color="white"
+                        borderRadius="md"
+                        p="4"
+                        data-aos="fade-up"
+                    >
+                        <Box borderBottom="1px solid white" mb="2">
+                            <Heading size="lg">Чем мы занимаемся?</Heading>
+                        </Box>
+                        <List spacing="4" pl="4">
                             <ListItem display="flex" alignItems="center" gap="2">
                                 <CheckIcon/>
-                                <Heading size="md">Круглосуточная госпитализация в профильные лечебные учреждения</Heading>
+                                <Heading size="md">Круглосуточная госпитализация в профильные лечебные
+                                    учреждения</Heading>
                             </ListItem>
                             <ListItem display="flex" alignItems="center" gap="2">
                                 <CheckIcon/>
@@ -64,22 +83,31 @@ export default function About() {
                                 <Heading size="md">Помощь в выборе стационара</Heading>
                             </ListItem>
                         </List>
-                        <Box mt="5" display="flex" flexDirection="column" alignItems="flex-end" gap="2">
-                            <Heading size="md">Нам доверяют, и мы очень дорожим этим доверием</Heading>
-                            <Heading size="md">Помогаем в решении большинства вопросов, связанных со здоровьем</Heading>
-                            <Heading size="md">Обеспечиваем быструю госпитализацию без очередей и проволочек</Heading>
-                            <Heading size="md">Гарантируем высокий уровень комфорта для пациентов</Heading>
-                            <Heading size="md">Всегда на связи, 24/7/365 без выходных и праздников</Heading>
-                            <Heading size="md">Мы следуем правилам: высочайший профессионализм врачей, максимальный
-                                комфорт
-                                и безопасность для пациентов.</Heading>
-                        </Box>
                     </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box p="4" borderRadius="lg" fontSize={{base: "20px", xl: "22px"}} fontWeight="semibold"
+                         bgColor="#eeeeee" data-aos="fade-up">
+                        <Text>Нам доверяют, и мы очень дорожим этим доверием</Text>
+                        <Text>Помогаем в решении большинства вопросов, связанных со здоровьем</Text>
+                        <Text>Обеспечиваем быструю госпитализацию без очередей и проволочек</Text>
+                        <Text>Гарантируем высокий уровень комфорта для пациентов</Text>
+                        <Text>Всегда на связи, 24/7/365 без выходных и праздников</Text>
+                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box textAlign="center"
+                         bgColor="#0d47a1"
+                         color="white"
+                         borderRadius="md"
+                         p="4"
+                         data-aos="fade-up"
+                    >
+                        <Heading size="lg">Мы следуем правилам: высочайший профессионализм врачей, максимальный
+                            комфорт
+                            и безопасность для пациентов.</Heading>
+                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <BaseCallBlock onClick={onOpen}/>
-                    <Box py="10" display="flex" justifyContent="space-around">
-                        <Heading size="md">Logo MSK</Heading>
-                        <Heading size="md">{phoneNumber}</Heading>
-                    </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                 </Box>
             </Layout>
         </>

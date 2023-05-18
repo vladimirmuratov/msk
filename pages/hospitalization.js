@@ -31,7 +31,7 @@ export default function Hospitalization() {
             <Layout>
                 <Box px="1rem">
                     <BaseBtnBack/>
-                    <Banner imgUrl="./images/hospitalization-main.png" label="Госпитализация в стационар"/>
+                    <Banner imgUrl="./images/hospitalization-main.png" label="Госпитализация в стационар" color="#ff8f00" textShadow="white"/>
                     <Box>
                         <Heading size="lg">Горячая линия экстренной госпитализации</Heading>
                         <Heading size="lg">{phoneNumber}</Heading>

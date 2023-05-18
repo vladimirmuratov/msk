@@ -20,10 +20,10 @@ export default function Hospitals() {
             <Layout>
                 <Box px={{base: "1px", md: "5"}} flexGrow="1">
                     <Box my="10">
-                        <Banner imgUrl="/images/hospitals2.jpg"
+                        <Banner imgUrl="/images/bad.png"
                                 label="Госпитализация в стационары ведомственной и кремлевской медицины"
                                 color="#ff8f00"
-                                textShadow="#fff"
+                                textShadow="white"
                         />
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
@@ -132,7 +132,7 @@ export default function Hospitals() {
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box
                         fontSize={{base: "20px", xl: "22px"}}
-                        bgColor="#cfd8dc"
+                        bgColor="#eeeeee"
                         my="10"
                         p="4"
                         color="blackAlpha.900"
@@ -148,7 +148,7 @@ export default function Hospitals() {
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box p="4" borderRadius="md" data-aos="fade-up" bgColor="#0d47a1" color="white">
-                        <Text fontWeight="bold" fontSize={{md: "20px"}}>
+                        <Text fontWeight="bold" fontSize={{md: "20px"}} letterSpacing="wide">
                             Уникальные компетенции врачебного корпуса, уровень медицинского обслуживания наравне с
                             европейским, самое передовое оборудование, замкнутый цикл медицинской помощи – возможности
                             для пациентов Центра госпитализации и сопровождения пациентов МСК в стационарах партнерских
@@ -163,26 +163,29 @@ export default function Hospitals() {
                         </Heading>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box textAlign="center" color="#0d47a1">
+                    <Box textAlign="center" color="#0d47a1" data-aos="fade-up">
                         <Heading>Выберите направление госпитализации</Heading>
                         <DirectionsHospitalization options={directionsOfHospitalizationOptions}/>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box textAlign="center">
+                    <Box textAlign="center" data-aos="fade-up">
                         <Heading mb="10">
                             Порядок госпитализации в медицинские учреждения ведомственной и кремлевской медицины
                             через Центр госпитализации и сопровождения пациентов МСК
                         </Heading>
                         <HospitalizationSteps/>
                     </Box>
-                    <Box textAlign="center">
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
+                    <Box textAlign="center" data-aos="fade-up">
                         <Heading>
                             Партнерская сеть
                             Центра госпитализации и сопровождения пациентов МСК
                         </Heading>
                         <HospitalsBlock isLocal={true}/>
                     </Box>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <BaseCallBlock btnLabel="Оставить заявку"/>
+                    <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                 </Box>
             </Layout>
         </>

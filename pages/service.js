@@ -24,6 +24,7 @@ export default function Service() {
                         imgUrl="./images/services-main.png"
                         label="Наша забота о Вашем здоровье"
                         color="#ff8f00"
+                        textShadow="white"
                     />
                     <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
@@ -31,7 +32,7 @@ export default function Service() {
                         fontSize={{base: "18px", xl: "22px"}}
                         bgColor="#0d47a1"
                         color="white" mb="12"
-                         borderRadius="md"
+                        borderRadius="md"
                         data-aos="fade-up"
                     >
                         <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
@@ -39,30 +40,35 @@ export default function Service() {
                                 <Image src="/images/service.png" h="full"/>
                             </GridItem>
                             <GridItem>
-                                    <Box
-                                        p="4"
-                                        display="flex"
-                                        flexDir="column"
-                                        justifyContent="space-between"
-                                        gap="4"
-                                        h="full"
-                                    >
-                                        <Heading alignSelf={{base: "start", md: "start"}}>
-                                            ОПЫТ
-                                        </Heading>
-                                        <Heading alignSelf={{base: "start", md: "center"}}>
-                                            ЭКСПЕРТИЗА
-                                        </Heading>
-                                        <Heading alignSelf={{base: "start", md: "end"}} mb="0">
-                                            РЕШЕНИЯ
-                                        </Heading>
+                                <Box
+                                    p="4"
+                                    display="flex"
+                                    flexDir="column"
+                                    justifyContent="space-between"
+                                    gap="4"
+                                    h="full"
+                                >
+                                    <Heading alignSelf={{base: "start", md: "start"}}>
+                                        ОПЫТ
+                                    </Heading>
+                                    <Heading alignSelf={{base: "start", md: "center"}}>
+                                        ЭКСПЕРТИЗА
+                                    </Heading>
+                                    <Heading alignSelf={{base: "start", md: "end"}} mb="0">
+                                        РЕШЕНИЯ
+                                    </Heading>
                                 </Box>
                             </GridItem>
                         </Grid>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box mb="10" data-aos="fade-up">
-                        <Text fontSize="18px" fontWeight="bold">
+                    <Box fontSize={{base: "20px", xl: "22px"}}
+                         bgColor="#eeeeee"
+                         p="4"
+                         borderRadius="md"
+                         data-aos="fade-up"
+                    >
+                        <Text fontSize="18px" fontWeight="semibold">
                             Подбираем оптимальный план лечения по поставленному диагнозу, учитывая ваши требования и
                             возможности.
                             Мы напрямую работаем с ведущими медицинскими учреждениями России. Одно из преимуществ нашей
