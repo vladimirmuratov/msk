@@ -7,7 +7,7 @@ export const BaseBtnBack = () => {
 
     const styles = {
         padding: 0,
-        visibility: router.pathname === "/" ? "hidden" : "visible"
+        visibility: router.pathname === "/" ? "hidden" : "visible",
     }
 
     const hoverStyles = {
@@ -22,7 +22,7 @@ export const BaseBtnBack = () => {
             onClick={() => router.back()}
             // onClick={() => window.history.back()}
             variant="ghost"
-            // position="absolute"
+            mt={{base: router.pathname === "/" ? "-52px" : "0"}}
         >
             Назад
         </Button>

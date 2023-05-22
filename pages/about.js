@@ -2,7 +2,6 @@ import {Box, Heading, List, ListItem, Text, useDisclosure} from "@chakra-ui/reac
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
 import {CheckIcon} from "@chakra-ui/icons";
-import {phoneNumber} from "@/config/defaultOptions";
 import {Banner} from "@/components/Banner";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
 import {BaseModal} from "@/components/base/BaseModal";

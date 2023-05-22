@@ -11,6 +11,7 @@ export const HeaderLinksBlock = ({links}) => {
 
     return (
         <Box
+            as="nav"
             display={{base: 'none', md: 'flex'}}
             gap="1rem"
             fontSize={{md: '0.8rem', lg: '1.2rem'}}

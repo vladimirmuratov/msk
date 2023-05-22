@@ -1,14 +1,12 @@
 import {useState} from "react";
-import {Box} from "@chakra-ui/react";
+import {Box, Grid, GridItem} from "@chakra-ui/react";
 import {Container} from "@/components/Container";
 import {Content} from "@/components/Content";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import {MobileMenu} from "@/components/MobileMenu";
-import {useEffect} from "react";
 import {BasePhonesBlock} from "@/components/base/BasePhonesBlock";
 import {BaseBtnBack} from "@/components/base/BaseBtnBack";
-import {useRouter} from "next/router";
 
 export const Layout = ({children}) => {
     const [isMobileMenuOpen, setMobileMenu] = useState(false)
@@ -33,6 +31,19 @@ export const Layout = ({children}) => {
                     <BaseBtnBack/>
                     <BasePhonesBlock/>
                 </Box>
+                {/*<Grid
+                    px={{base: "2", md: "4"}}
+                    gridTemplateColumns={{base: "repeat(1, 1fr)", md: "repeat(2, 1fr)"}}
+                    // justifyItems={{base: "center", md: "start"}}
+                    alignItems="center"
+                >
+                    <GridItem justifySelf={{base: "center", md: "start"}}>
+                        <BaseBtnBack/>
+                    </GridItem>
+                    <GridItem>
+                        <BasePhonesBlock/>
+                    </GridItem>
+                </Grid>*/}
                 <Content>
                     {children}
                 </Content>

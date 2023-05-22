@@ -178,7 +178,7 @@ export default function Index() {
                     flexGrow="1"
                     display="flex"
                     flexDir="column"
-                    px={{md: "5"}}
+                    px={{md: "4"}}
                 >
                     <Box width="full">
                         <BaseCarousel data={carouselOptions}/>
