@@ -34,7 +34,7 @@ export default function Rehabilitation() {
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px={{base: "1px", md: "5"}} flexGrow="1">
-                    <Banner imgUrl="../images/rehabilitation.png" label="Полноценная жизнь после инсульта"
+                    <Banner imgUrl="/images/rehabilitation.png" label="Полноценная жизнь после инсульта"
                             color="#ff8f00" textShadow="#fff"/>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <BaseCallBlock onClick={onOpen} btnLabel="Получить консультацию"/>

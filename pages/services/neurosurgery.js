@@ -31,7 +31,7 @@ export default function Neurosurgery() {
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px={{base: "4px", md: "1rem"}} flexGrow="1">
-                    <Banner imgUrl="../images/neurosurgery2.png" label="Нейрохирургия" color="#ff8f00"
+                    <Banner imgUrl="/images/neurosurgery2.png" label="Нейрохирургия" color="#ff8f00"
                             textShadow="#fff"/>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box mt="10" display="flex" flexDirection="column" gap="4" color="#0d47a1" data-aos="fade-up">

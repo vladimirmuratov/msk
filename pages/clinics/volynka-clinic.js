@@ -40,7 +40,7 @@ export default function VolynkaClinic() {
                             label='Клиническая больница №1 Управление делами Президента РФ (Волынская)'
                     />
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up">
+                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", lg: "22px"}} data-aos="fade-up">
                         <Heading size="lg">Инфраструктура</Heading>
                         <Text>
                             <span
@@ -72,7 +72,7 @@ export default function VolynkaClinic() {
                         </Text>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up">
+                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", lg: "22px"}} data-aos="fade-up">
                         <Heading size="lg">Стационар</Heading>
                         <Text>
                             В ФГБУ "Клиническая больница №1" Управления делами Президента РФ (Волынская) можно пройти
@@ -96,7 +96,7 @@ export default function VolynkaClinic() {
                         </Text>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", xl: "22px"}} textAlign="center" data-aos="fade-up">
+                    <Box px={{base: "3", md: "0"}} fontSize={{base: "20px", lg: "22px"}} textAlign="center" data-aos="fade-up">
                         <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", md: "repeat(3, 1fr)"}} gap="5">
                             <GridItem>
                                 <BaseGridItem icon={CiMedicalCross} value="20+"
@@ -126,7 +126,7 @@ export default function VolynkaClinic() {
                             style={{color: "#1976d2", textDecoration: "underline"}}>Подробнее</Link>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", xl: "22px"}} data-aos="fade-up">
+                    <Box p={{base: "3", md: "4"}} bgColor="#eeeeee" borderRadius="md" fontSize={{base: "20px", lg: "22px"}} data-aos="fade-up">
                         <Heading size="lg">Инновационная хирургия и уникальные методики</Heading>
                         <Text>
                             «Больница высоких технологий» - так называют Волынскую больницу в профессиональном
@@ -149,34 +149,34 @@ export default function VolynkaClinic() {
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box bgColor="#e8f5e9" p="4" borderRadius="md" data-aos="fade-up">
-                        <List px={{base: "3", md: "0"}}>
+                        <List px={{base: "2", md: "0"}}>
                             <ListItem display="flex" alignItems={{base: "flex-start", md: "center"}} gap="3" mb="3">
                                 <CheckCircleIcon boxSize="1.5rem" color="green.300" mt={{base: "2", md: "0"}}/>
-                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", xl: "22px"}}>
+                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", lg: "22px"}}>
                                     Методика холодноплазменной хирургии
                                 </Text>
                             </ListItem>
                             <ListItem display="flex" alignItems={{base: "flex-start", md: "center"}} gap="3" mb="3">
                                 <CheckCircleIcon boxSize="1.5rem" color="green.300" mt={{base: "2", md: "0"}}/>
-                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", xl: "22px"}}>
+                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", lg: "22px"}}>
                                     Тапедопластика — уникальные операции по восстановлению слуха
                                 </Text>
                             </ListItem>
                             <ListItem display="flex" alignItems={{base: "flex-start", md: "center"}} gap="3" mb="3">
                                 <CheckCircleIcon boxSize="1.5rem" color="green.300" mt={{base: "2", md: "0"}}/>
-                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", xl: "22px"}}>
+                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", lg: "22px"}}>
                                     Малоинвазивные хирургические методики
                                 </Text>
                             </ListItem>
                             <ListItem display="flex" alignItems={{base: "flex-start", md: "center"}} gap="3" mb="3">
                                 <CheckCircleIcon boxSize="1.5rem" color="green.300" mt={{base: "2", md: "0"}}/>
-                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", xl: "22px"}}>
+                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", lg: "22px"}}>
                                     Уникальные операции по ортопедической коррекции нижних конечностей
                                 </Text>
                             </ListItem>
                             <ListItem display="flex" alignItems={{base: "flex-start", md: "center"}} gap="3" mb="3">
                                 <CheckCircleIcon boxSize="1.5rem" color="green.300" mt={{base: "2", md: "0"}}/>
-                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", xl: "22px"}}>
+                                <Text m="0" fontWeight="bold" fontSize={{base: "20px", lg: "22px"}}>
                                     Методика ангиографии и стентирования коронарных сосудов в самые первые часы развития
                                     инфаркта миокарда
                                 </Text>

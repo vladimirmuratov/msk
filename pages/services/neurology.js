@@ -20,7 +20,7 @@ export default function Neurology() {
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px={{base: "4px", md: "1rem"}} flexGrow="1">
-                    <Banner imgUrl="../images/neurology.png" label="Неврология" color="#ff8f00" textShadow="#fff"/>
+                    <Banner imgUrl="/images/neurology.png" label="Неврология" color="#ff8f00" textShadow="#fff"/>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box color="#0d47a1" data-aos="fade-up">
                         <Heading size="lg">

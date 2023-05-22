@@ -21,7 +21,7 @@ export default function Ambulance() {
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px={{base: "0", md: "1rem"}} flexGrow="1">
-                    <Banner imgUrl="../images/ambulance2.png" label="Когда важна каждая минута" color="#ff8f00" textShadow="white"/>
+                    <Banner imgUrl="/images/ambulance2.png" label="Когда важна каждая минута" color="#ff8f00" textShadow="white"/>
                     <Box borderBottom="1px solid gray" mb="10"/>
                     <Box
                         color="#0d47a1"

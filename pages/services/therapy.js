@@ -32,7 +32,7 @@ export default function Therapy() {
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px={{base: "4px", md: "1rem"}} flexGrow="1">
-                    <Banner imgUrl="../images/therapy.png" label="Терапия" color="#ff8f00" textShadow="#fff"/>
+                    <Banner imgUrl="/images/therapy.png" label="Терапия" color="#ff8f00" textShadow="#fff"/>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box data-aos="fade-up" color="#0d47a1" textAlign="center">
                         <Heading size={{base: "md", md: "lg"}}>

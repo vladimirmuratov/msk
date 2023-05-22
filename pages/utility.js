@@ -19,7 +19,7 @@ export default function Utility() {
             </Head>
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
-                <Box px="1rem">
+                <Box px={{base: "1px", md: "1rem"}}>
                     <Banner imgUrl="/images/services-main.png"
                             label="Услуги" color="#ff8f00" textShadow="#fff"/>
                     <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
@@ -57,7 +57,7 @@ export default function Utility() {
                         </Grid>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="8"/>
-                    <Box color="#0d47a1" data-aos="fade-up">
+                    <Box px={{base: "1", md: "0"}} color="#0d47a1" data-aos="fade-up">
                         <Heading>
                             Контроль качества и стоимости медицинской помощи,
                         </Heading>
@@ -87,7 +87,7 @@ export default function Utility() {
                         </Text>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="8"/>
-                    <Box color="#0d47a1" data-aos="fade-up">
+                    <Box px={{base: "1", md: "0"}} color="#0d47a1" data-aos="fade-up">
                         <Heading>
                             Время – самый ценный ресурс, который получают пациенты,
                         </Heading>
@@ -171,6 +171,7 @@ export default function Utility() {
                     </Box>
                     <Box borderBottom="1px solid gray" my="10"/>
                     <Box
+                        px={{base: "1", md: "0"}}
                         color="#0d47a1"
                         display="flex"
                         flexDir="column"
@@ -231,8 +232,11 @@ export default function Utility() {
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="8"/>
                     <Box data-aos="fade-up">
-                        <Heading size="lg">Партнерская сеть Центра госпитализации и сопровождения пациентов
-                            МСК</Heading>
+                        <Box px={{base: "1", md: "0"}}>
+                            <Heading size="lg">Партнерская сеть Центра госпитализации и сопровождения пациентов
+                                МСК
+                            </Heading>
+                        </Box>
                         <HospitalsBlock isLocal={true}/>
                     </Box>
                 </Box>

@@ -32,7 +32,7 @@ export default function Cardiology() {
             <Layout>
                 <Box px={{base: "4px", md: "1rem"}} flexGrow="1">
                     <Banner
-                        imgUrl="../images/cardiology.png"
+                        imgUrl="/images/cardiology.png"
                         label="Кардиология и сердечно - сосудистые заболевания"
                         color="#ff8f00"
                         textShadow="#fff"

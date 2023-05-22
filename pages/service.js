@@ -21,7 +21,7 @@ export default function Service() {
             <Layout>
                 <Box px="1rem">
                     <Banner
-                        imgUrl="./images/services-main.png"
+                        imgUrl="/images/services-main.png"
                         label="Наша забота о Вашем здоровье"
                         color="#ff8f00"
                         textShadow="white"

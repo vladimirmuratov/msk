@@ -20,7 +20,7 @@ export default function About() {
             <BaseModal isOpen={isOpen} onClose={onClose}/>
             <Layout>
                 <Box px={{base: "4px", md: "1rem"}} color="#0d47a1">
-                    <Banner imgUrl="./images/doctor8.png" label="МСК  - ваш гид в вопросах здоровья" color="#ff8f00"
+                    <Banner imgUrl="/images/doctor8.png" label="МСК  - ваш гид в вопросах здоровья" color="#ff8f00"
                             textShadow="white"/>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
                     <Box px="4" data-aos="fade-up">

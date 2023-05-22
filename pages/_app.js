@@ -15,7 +15,7 @@ export default function App({Component, pageProps}) {
 
     useEffect(() => {
         AOS.init({
-            delay: 400,
+            delay: 300,
             duration: 800,
             // disable: 'mobile'
         });
