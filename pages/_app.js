@@ -18,11 +18,9 @@ export default function App({Component, pageProps}) {
             delay: 300,
             duration: 800,
             // disable: 'mobile'
-        });
-    }, []);
-
-    useEffect(() => {
+        })
         AOS.refresh()
+        AOS.refreshHard()
     }, [])
 
     return (

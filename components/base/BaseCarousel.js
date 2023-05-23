@@ -11,12 +11,12 @@ export const BaseCarousel = ({data = []}) => {
                 {data.map(({id, img, label, btnLabel1, btnLabel2, path}) => (
                     <Carousel.Item key={id}>
                         <Banner label={label} imgUrl={img}/>
-                        <Carousel.Caption>
+                        {/*<Carousel.Caption>
                                 <ButtonGroup mt="3" variant='outline' spacing='6'>
                                     <Button _hover={{color: "lightgray"}}>{btnLabel1}</Button>
                                     <Button _hover={{color: "lightgray"}}>{btnLabel2}</Button>
                                 </ButtonGroup>
-                        </Carousel.Caption>
+                        </Carousel.Caption>*/}
                     </Carousel.Item>
                 ))}
             </Carousel>

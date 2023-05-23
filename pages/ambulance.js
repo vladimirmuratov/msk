@@ -1,11 +1,10 @@
-import {Box, Heading, Icon, List, ListIcon, ListItem, Text, UnorderedList, useDisclosure} from "@chakra-ui/react";
-import {BaseBtnBack} from "@/components/base/BaseBtnBack";
+import {Box, Heading, Icon, List, ListIcon, ListItem, Text, useDisclosure} from "@chakra-ui/react";
 import {Layout} from "@/components/Layout";
 import Head from "next/head";
 import {Banner} from "@/components/Banner";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
 import {BaseModal} from "@/components/base/BaseModal";
-import {WarningIcon, CheckCircleIcon} from "@chakra-ui/icons";
+import {CheckCircleIcon, WarningIcon} from "@chakra-ui/icons";
 
 export default function Ambulance() {
     const {isOpen, onOpen, onClose} = useDisclosure()
@@ -71,32 +70,32 @@ export default function Ambulance() {
                         </Box>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="10"/>
-                    <Box data-aos="fade-up">
-                        <List spacing="4" fontSize={{base: "18px", xl: "22px"}} fontWeight="bold">
+                    <Box data-aos="fade-up" bgColor="#e8f5e9" color="#0d47a1" py="4" borderRadius="md">
+                        <List pl={{base: "4", md: "8"}} spacing="4" fontSize={{base: "18px", xl: "22px"}} fontWeight="bold">
                             <ListItem>
-                                <ListIcon as={CheckCircleIcon} color='green.500'/>
+                                <ListIcon as={CheckCircleIcon} color='green.300' fontSize="1.5rem"/>
                                 Оказание медицинской помощи 24/7 без праздников и выходных.
                             </ListItem>
                             <ListItem>
-                                <ListIcon as={CheckCircleIcon} color='green.500'/>
+                                <ListIcon as={CheckCircleIcon} color='green.300' fontSize="1.5rem"/>
                                 Оперативный приезд бригады скорой помощи.
                             </ListItem>
                             <ListItem>
-                                <ListIcon as={CheckCircleIcon} color='green.500'/>
+                                <ListIcon as={CheckCircleIcon} color='green.300' fontSize="1.5rem"/>
                                 Высококвалифицированные специалисты имеют практический опыт оказания помощи в
                                 самых сложных ситуациях.
                             </ListItem>
                             <ListItem>
-                                <ListIcon as={CheckCircleIcon} color='green.500'/>
+                                <ListIcon as={CheckCircleIcon} color='green.300' fontSize="1.5rem"/>
                                 Помощь в условиях реанимобиля для поддержания жизнедеятельности пациента до
                                 приезда в стационар.
                             </ListItem>
                             <ListItem>
-                                <ListIcon as={CheckCircleIcon} color='green.500'/>
+                                <ListIcon as={CheckCircleIcon} color='green.300' fontSize="1.5rem"/>
                                 Современное оборудование и наличие всех необходимых лекарств.
                             </ListItem>
                             <ListItem>
-                                <ListIcon as={CheckCircleIcon} color='green.500'/>
+                                <ListIcon as={CheckCircleIcon} color='green.300' fontSize="1.5rem"/>
                                 Комфортная транспортировка - гидравлические кушетки, мягкие ремни, сидения для
                                 сопровождающих.
                             </ListItem>

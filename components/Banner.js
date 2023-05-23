@@ -15,6 +15,7 @@ export const Banner = ({imgUrl, label, color = "white", textShadow = "#000"}) =>
                 width="full"
             />*/}
             <Image
+                priority={true}
                 src={imgUrl}
                 alt="pic"
                 width="0"
