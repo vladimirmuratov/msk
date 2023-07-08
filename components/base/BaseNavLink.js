@@ -25,6 +25,7 @@ export const BaseNavLink = ({linksOptions, onClose = undefined, activeStyles = n
             {linksOptions.length
                 ? linksOptions.map(({id, label, path, mobPath}) => (
                     <Link
+                        // scroll={false}
                         key={id}
                         href={isHash ? path : mobPath}
                         // href={{base: mobPath, md: isHash ? path : mobPath}}

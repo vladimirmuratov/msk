@@ -24,7 +24,7 @@ export default function Utility() {
                             label="Услуги" color="#ff8f00" textShadow="#fff"/>
                     <BaseCallBlock onClick={onOpen} btnLabel="Оставить заявку"/>
                     <Box
-                        fontSize={{base: "18px", xl: "22px"}}
+                        fontSize={{base: "18px", lg: "16px", xl: "22px"}}
                         bgColor="#0d47a1"
                         color="white"
                         mb="12"
@@ -96,7 +96,7 @@ export default function Utility() {
                         </Heading>
                     </Box>
                     <Box borderBottom="1px solid gray" mt="10" mb="12"/>
-                    <Box fontSize={{base: "18px", xl: "22px"}} bgColor="#0d47a1" color="white" borderRadius="md"
+                    <Box fontSize={{base: "18px", lg: "16px", xl: "22px"}} bgColor="#0d47a1" color="white" borderRadius="md"
                          data-aos="fade-up">
                         <Grid gridTemplateColumns={{base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)"}}>
                             <GridItem>
@@ -141,7 +141,7 @@ export default function Utility() {
                             </GridItem>
                             <GridItem>
                                 <Box p="4" height="full" display="flex" justifyContent="center" alignItems="center">
-                                    <Text fontSize={{base: "20px", md: "24px", lg: "26px"}} lineHeight="10">
+                                    <Text fontSize={{base: "20px", md: "22px", xl: "26px"}} lineHeight="10">
                                         Система преемственности и персонифицированный подход, реализованные в Центре
                                         госпитализации
                                         и сопровождения пациентов МСК, значительно повышает результативность оказания

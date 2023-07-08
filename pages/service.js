@@ -1,6 +1,5 @@
-import {Box, Grid, GridItem, Heading, Image, List, ListItem, Text, useDisclosure} from "@chakra-ui/react";
+import {Box, Grid, GridItem, Heading, Image, Text, useDisclosure} from "@chakra-ui/react";
 import {Layout} from "@/components/Layout";
-import {BaseBtnBack} from "@/components/base/BaseBtnBack";
 import Head from "next/head";
 import {Banner} from "@/components/Banner";
 import {BaseCallBlock} from "@/components/base/BaseCallBlock";
